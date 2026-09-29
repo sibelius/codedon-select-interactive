@@ -1,0 +1,301 @@
+{
+  "typography": [
+    {
+      "role": "display",
+      "fontFamily": "DM Sans",
+      "fontSize": "136px",
+      "fontWeight": "700",
+      "lineHeight": "122.4px",
+      "letterSpacing": "-6.8px",
+      "color": "#F0EFEE",
+      "sampleText": "KeepGettingBetter_"
+    },
+    {
+      "role": "heading",
+      "fontFamily": "DM Sans",
+      "fontSize": "60px",
+      "fontWeight": "700",
+      "lineHeight": "60px",
+      "letterSpacing": "-1.5px",
+      "color": "#050707",
+      "sampleText": "Monte sua jornada."
+    },
+    {
+      "role": "heading-2",
+      "fontFamily": "DM Sans",
+      "fontSize": "48px",
+      "fontWeight": "700",
+      "lineHeight": "48px",
+      "letterSpacing": "-1.2px",
+      "color": "#050707",
+      "sampleText": "A maioria dos eventos foi feita pra quem está chegando."
+    },
+    {
+      "role": "body",
+      "fontFamily": "Space Mono",
+      "fontSize": "48px",
+      "fontWeight": "700",
+      "lineHeight": "48px",
+      "letterSpacing": "normal",
+      "color": "#F0EFEE",
+      "sampleText": "300"
+    },
+    {
+      "role": "label",
+      "fontFamily": "DM Sans",
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "lineHeight": "24px",
+      "letterSpacing": "normal",
+      "color": "#050707",
+      "sampleText": ">⌘K busca tudo"
+    },
+    {
+      "role": "heading-3",
+      "fontFamily": "DM Sans",
+      "fontSize": "15px",
+      "fontWeight": "700",
+      "lineHeight": "20.625px",
+      "letterSpacing": "normal",
+      "color": "#050707",
+      "sampleText": "Abertura"
+    },
+    {
+      "role": "link",
+      "fontFamily": "Space Mono",
+      "fontSize": "12px",
+      "fontWeight": "700",
+      "lineHeight": "16px",
+      "letterSpacing": "normal",
+      "color": "#FFFFFF",
+      "sampleText": "20% off →"
+    },
+    {
+      "role": "code",
+      "fontFamily": "Space Mono",
+      "fontSize": "10px",
+      "fontWeight": "400",
+      "lineHeight": "15px",
+      "letterSpacing": "3px",
+      "color": "oklab(0.952613 0.000693351 0.00161159 / 0.6)",
+      "sampleText": "experience 26"
+    }
+  ],
+  "spacing": {
+    "observed": [
+      4,
+      6,
+      8,
+      10,
+      12,
+      16,
+      20,
+      24,
+      28,
+      32,
+      40,
+      80
+    ],
+    "baseUnit": 4
+  },
+  "radius": [
+    "3.35544e+07px"
+  ],
+  "shadows": [
+    {
+      "value": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgb(156, 29, 90) 0px 6px 0px 0px",
+      "count": 4
+    },
+    {
+      "value": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.25) 0px 25px 50px -12px",
+      "count": 1
+    }
+  ],
+  "buttons": [
+    {
+      "label": "PALESTRANTE20copiar",
+      "background": "transparent",
+      "backgroundImage": "",
+      "backdropFilter": "",
+      "color": "#F0EFEE",
+      "padding": "0px",
+      "borderRadius": "0px",
+      "border": "0px solid rgb(240, 239, 238)",
+      "boxShadow": "none",
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "height": "40px"
+    },
+    {
+      "label": "🎲 me surpreenda",
+      "background": "transparent",
+      "backgroundImage": "",
+      "backdropFilter": "",
+      "color": "#050707",
+      "padding": "10px 20px",
+      "borderRadius": "3.35544e+07px",
+      "border": "2px solid rgb(5, 7, 7)",
+      "boxShadow": "none",
+      "fontSize": "14px",
+      "fontWeight": "700",
+      "height": "44px"
+    },
+    {
+      "label": "⌘K busca tudo",
+      "background": "transparent",
+      "backgroundImage": "",
+      "backdropFilter": "",
+      "color": "#6B7078",
+      "padding": "2px 6px",
+      "borderRadius": "4px",
+      "border": "1px solid rgb(212, 211, 209)",
+      "boxShadow": "none",
+      "fontSize": "11px",
+      "fontWeight": "400",
+      "height": "22.5px"
+    },
+    {
+      "label": "#IA",
+      "background": "oklab(0.125352 -0.00445592 -0.00132534 / 0.05)",
+      "backgroundImage": "",
+      "backdropFilter": "",
+      "color": "#050707",
+      "padding": "4px 12px",
+      "borderRadius": "3.35544e+07px",
+      "border": "0px solid rgb(5, 7, 7)",
+      "boxShadow": "none",
+      "fontSize": "12px",
+      "fontWeight": "400",
+      "height": "24px"
+    },
+    {
+      "label": "🚪 Abertura",
+      "background": "#FFFFFF",
+      "backgroundImage": "",
+      "backdropFilter": "",
+      "color": "#050707",
+      "padding": "4px 10px",
+      "borderRadius": "8px",
+      "border": "1px solid rgb(212, 211, 209)",
+      "boxShadow": "none",
+      "fontSize": "11px",
+      "fontWeight": "400",
+      "height": "26.5px"
+    }
+  ],
+  "cards": [
+    {
+      "label": "card",
+      "background": "#FFFFFF",
+      "backgroundImage": "",
+      "backdropFilter": "",
+      "color": "#050707",
+      "padding": "16px",
+      "borderRadius": "16px",
+      "border": "1px solid rgb(212, 211, 209)",
+      "boxShadow": "none",
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "height": "92.625px"
+    }
+  ],
+  "nav": {
+    "label": "navigation",
+    "background": "oklab(0.125352 -0.00445592 -0.00132534 / 0.9)",
+    "backgroundImage": "",
+    "backdropFilter": "blur(8px)",
+    "color": "#F0EFEE",
+    "padding": "0px",
+    "borderRadius": "0px",
+    "border": "",
+    "boxShadow": "none",
+    "fontSize": "16px",
+    "fontWeight": "400",
+    "height": "65px"
+  },
+  "chips": [
+    {
+      "label": "copiar",
+      "background": "oklab(0.952613 0.000693351 0.00161159 / 0.1)",
+      "color": "#F0EFEE",
+      "padding": "4px 12px",
+      "borderRadius": "3.35544e+07px",
+      "border": "0px solid rgb(240, 239, 238)",
+      "boxShadow": "none",
+      "fontSize": "11px",
+      "fontWeight": "400",
+      "height": "24.5px"
+    },
+    {
+      "label": "usar cupom →",
+      "background": "#E73288",
+      "color": "#FFFFFF",
+      "padding": "12px 24px",
+      "borderRadius": "3.35544e+07px",
+      "border": "0px solid rgb(255, 255, 255)",
+      "boxShadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgb(156, 29, 90) 0px 6px 0px 0px",
+      "fontSize": "14px",
+      "fontWeight": "700",
+      "height": "44px"
+    }
+  ],
+  "statCells": [],
+  "tabs": [
+    {
+      "label": "46",
+      "background": "transparent",
+      "color": "#F0EFEE",
+      "padding": "0px",
+      "borderRadius": "0px",
+      "border": "0px solid rgb(240, 239, 238)",
+      "boxShadow": "none",
+      "fontSize": "36px",
+      "fontWeight": "700",
+      "height": "40px"
+    },
+    {
+      "label": "2d 10h 52m 19s",
+      "background": "transparent",
+      "color": "#E73288",
+      "padding": "0px",
+      "borderRadius": "0px",
+      "border": "0px solid rgb(231, 50, 136)",
+      "boxShadow": "none",
+      "fontSize": "16px",
+      "fontWeight": "700",
+      "height": "auto"
+    }
+  ],
+  "backgrounds": [
+    {
+      "value": "linear-gradient(to top, rgb(5, 7, 7) 0%, oklab(0.125352 -0.00445592 -0.00132534 / 0.8) 50%, rgba(0, 0, 0, 0) 100%)",
+      "area": 293868
+    }
+  ],
+  "glass": [
+    {
+      "backdropFilter": "blur(8px)",
+      "background": "oklab(0.952613 0.000693351 0.00161159 / 0.9)",
+      "border": "0px solid rgb(5, 7, 7)",
+      "borderRadius": "0px",
+      "boxShadow": "",
+      "area": 197760
+    },
+    {
+      "backdropFilter": "blur(8px)",
+      "background": "oklab(0.125352 -0.00445592 -0.00132534 / 0.9)",
+      "border": "",
+      "borderRadius": "0px",
+      "boxShadow": "",
+      "area": 124800
+    },
+    {
+      "backdropFilter": "blur(8px)",
+      "background": "oklab(0.125352 -0.00445592 -0.00132534 / 0.95)",
+      "border": "",
+      "borderRadius": "0px",
+      "boxShadow": "",
+      "area": 109440
+    }
+  ]
+}

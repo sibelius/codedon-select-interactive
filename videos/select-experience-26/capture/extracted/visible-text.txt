@@ -1,0 +1,627 @@
+[span] experience 26
+[a] programação
+[a] palestrantes
+[a] ingresso
+[a] 20% off →
+[p] presencial · 14 de novembro · 9h às 19h · são paulo
+[h1] Keep
+[h1] Getting
+[span] Better
+[p] O encontro anual dos devs que chegaram longe e não têm intenção de parar. Formato
+[b] talkless
+[p] : sem palco central, sem plateia calada.
+[span] dias
+[span] horas
+[span] min
+[span] seg
+[a] garantir vaga por
+[a] R$ 1.032
+[a] explorar programação
+[span] ~/select-26 — tail -f programacao.log
+[p] 11:00 [capela] Mantendo influência técnica quando tudo muda a cada 18 meses  ← Elemar
+[p] 14:30 [studio] Quando reescrever, quando refatorar, quando deixar quieto  ← Rafael, Alex
+[p] 14:30 [capela] O dia a dia de um Principal Engineer  ← Rafael, Damiana
+[p] 17:00 [lab] Construir reputação técnica sem virar influencer  ← Rafael, Elaine, Paula
+[p] 11:30 [studio] Produtividade com IA: como
+[p] 300
+[p] vagas. apenas.
+[p] palestrantes reconhecidos
+[p] sessões pra montar sua jornada
+[p] salas simultâneas
+[p] cupom de palestrante
+[span] PALESTRANTE20
+[span] copiar
+[p] 20% de desconto em qualquer lote. O link abaixo já aplica o cupom automaticamente.
+[a] usar cupom →
+[span] Alestan
+[span] Totvs
+[span] Alex Rios
+[span] Memed
+[span] Ana Neri
+[span] Clutch
+[span] André David
+[span] FIAP
+[span] Augusto Souza
+[span] QuintoAndar
+[span] Bruna Emerich
+[span] Zoocha
+[span] Bu Kinoshita
+[span] Resend
+[span] Damiana Costa
+[span] Danilo Fuchs
+[span] Salvy
+[span] Dennis Rojas
+[span] Douglas Hermann
+[span] SAP
+[span] Eduardo Matos
+[span] Escola Forja
+[span] Elaine Watanabe
+[span] Elemar Junior
+[span] Eximia.Co
+[span] Erick Wendel
+[span] NodeSource
+[span] Felipe Ribeiro
+[span] Ex-Google, Netflix e Spotify
+[span] Gleica
+[span] Joás Garcia
+[span] Asaas
+[span] Henrique Souza
+[span] iFood
+[span] Jessica Felix
+[span] Juliano Martins
+[span] Mercado Livre
+[span] Leonardo Accorsi
+[span] QuintoAndar
+[span] Léo Sobral
+[span] CRMBonus
+[span] Marcela Godoy
+[span] PicPay
+[span] Marcelio Leal
+[span] Google
+[span] Mario Souto
+[span] Nubank
+[span] Paula Moura
+[span] Banco do Brasil
+[span] Rafael Dias
+[span] Oracle
+[span] Rafael Dohms
+[span] SurveyMonkey
+[span] Rafael Ponte
+[span] Zup
+[span] Raphael Albino
+[span] Raphael Pizzo
+[span] Locaweb
+[span] Rodrigo Branas
+[span] Rodrigo Miguel
+[span] Asaas
+[span] Rosicléia Frasson
+[span] sseraphini
+[span] Woovi
+[span] Thuran
+[span] Asaas
+[span] Waldemar Neto
+[span] TechLeads.club
+[span] Wheslley Rimar Bezerra
+[span] Mercado Livre
+[span] Zarathon "Zara" Viana
+[span] Alestan
+[span] Totvs
+[span] Alex Rios
+[span] Memed
+[span] Ana Neri
+[span] Clutch
+[span] André David
+[span] FIAP
+[span] Augusto Souza
+[span] QuintoAndar
+[span] Bruna Emerich
+[span] Zoocha
+[span] Bu Kinoshita
+[span] Resend
+[span] Damiana Costa
+[span] Danilo Fuchs
+[span] Salvy
+[span] Dennis Rojas
+[span] Douglas Hermann
+[span] SAP
+[span] Eduardo Matos
+[span] Escola Forja
+[span] Elaine Watanabe
+[span] Elemar Junior
+[span] Eximia.Co
+[span] Erick Wendel
+[span] NodeSource
+[span] Felipe Ribeiro
+[span] Ex-Google, Netflix e Spotify
+[span] Gleica
+[span] Joás Garcia
+[span] Asaas
+[span] Henrique Souza
+[span] iFood
+[span] Jessica Felix
+[span] Juliano Martins
+[span] Mercado Livre
+[span] Leonardo Accorsi
+[span] QuintoAndar
+[span] Léo Sobral
+[span] CRMBonus
+[span] Marcela Godoy
+[span] PicPay
+[span] Marcelio Leal
+[span] Google
+[span] Mario Souto
+[span] Nubank
+[span] Paula Moura
+[span] Banco do Brasil
+[span] Rafael Dias
+[span] Oracle
+[span] Rafael Dohms
+[span] SurveyMonkey
+[span] Rafael Ponte
+[span] Zup
+[span] Raphael Albino
+[span] Raphael Pizzo
+[span] Locaweb
+[span] Rodrigo Branas
+[span] Rodrigo Miguel
+[span] Asaas
+[span] Rosicléia Frasson
+[span] sseraphini
+[span] Woovi
+[span] Thuran
+[span] Asaas
+[span] Waldemar Neto
+[span] TechLeads.club
+[span] Wheslley Rimar Bezerra
+[span] Mercado Livre
+[span] Zarathon "Zara" Viana
+[p] // por que ir
+[h2] A maioria dos eventos foi feita pra quem está chegando.
+[p] A Select foi feita pra quem
+[b] já chegou
+[p] . E sabe que estagnação não avisa quando aparece.
+[p] Quem está na sala tem tanto a contribuir quanto quem está na frente. Se você precisou pensar se isso é pra você, provavelmente é.
+[span] × no dia
+[p] Fishbowl
+[p] Cadeiras no centro, uma sempre vazia. Quem tem algo a dizer senta e entra na conversa.
+[span] × no dia
+[p] Mentoria
+[p] Grupo pequeno, suas dúvidas reais, conversa direta com quem já passou por isso.
+[span] × no dia
+[p] Roundtable
+[p] Mesa redonda sobre decisões e trade-offs, com espaço pra plateia discordar.
+[span] × no dia
+[p] Palestra
+[p] As poucas talks do dia, escolhidas a dedo pra abrir provocações.
+[span] × no dia
+[p] AMA
+[p] Ask Me Anything: pergunte o que quiser, sem roteiro e sem slides.
+[span] × no dia
+[p] Lições aprendidas
+[p] Bastidores sem filtro: o que deu certo, o que deu errado e o que ninguém conta.
+[span] × no dia
+[p] Architectural Kata
+[p] Times modelam uma arquitetura pra um problema real e defendem suas escolhas.
+[span] 🛠️
+[span] × no dia
+[p] Workshop
+[p] Mão na massa: sai da sala com algo aplicável na segunda-feira.
+[p] // programação
+[h2] Monte sua jornada.
+[p] 5 salas simultâneas, 1 dia. Busque por tema, pessoa ou empresa, marque com ★ o que não pode perder e a gente avisa se tiver conflito.
+[button] me surpreenda
+[button] ⌘K busca tudo
+[button] carreira
+[button] arquitetura
+[button] liderança
+[button] produto
+[button] qualidade
+[button] staff
+[button] Pix
+[button] ★ só minha jornada (
+[button] Abertura
+[button] Palestra
+[button] Roundtable
+[button] Mentoria
+[button] Fishbowl
+[button] Architectural Kata
+[button] AMA
+[button] Lições aprendidas
+[button] 🛠️
+[button] Workshop
+[button] Auditório
+[button] Arquibancada
+[button] Capela
+[button] Lab
+[button] Studio
+[span] sessões
+[span] Auditório
+[span] Arquibancada
+[span] Capela
+[span] Lab
+[span] Studio
+[span] 09:00
+[span] Abertura
+[span] 09:00
+[span] 09:30
+[h3] Abertura
+[span] 09:30
+[span] Palestra
+[span] 09:30
+[span] 10:20
+[h3] O que ainda faz uma pessoa desenvolvedora ser boa?
+[p] Raphael Albino
+[span] Roundtable
+[span] 09:30
+[span] 10:20
+[h3] Arquitetura na era da IA
+[p] Elemar Junior, Rodrigo Branas
+[span] Mentoria
+[span] 09:30
+[span] 10:50
+[h3] Liderança sem crachá de gestor: o impacto estratégico do Staff Engineer
+[p] Rosicléia Frasson, Elaine Watanabe
+[span] Fishbowl
+[span] 09:30
+[span] 10:20
+[h3] O futuro das IDEs
+[p] Joás Garcia, Waldemar Neto
+[span] Fishbowl
+[span] 09:30
+[span] 10:20
+[h3] Próximos anos do mercado de tech
+[p] Gleica, Zarathon "Zara" Viana
+[span] 10:30
+[span] Palestra
+[span] 10:30
+[span] 11:20
+[h3] O que separa o Sênior excelente do Principal (e não é técnica)
+[p] Alex Rios
+[span] Mentoria
+[span] 10:30
+[span] 11:20
+[h3] A reinvenção da engenharia de software na era da IA generativa
+[p] Douglas Hermann
+[span] Architectural Kata
+[span] 10:30
+[span] 12:40
+[h3] Modelando o Pix
+[p] Dennis Rojas, Wheslley Rimar Bezerra
+[span] Fishbowl
+[span] 10:30
+[span] 11:20
+[h3] De founder a funcionário (e às vezes de volta)
+[p] Thuran, Marcelio Leal
+[span] 11:00
+[span] Mentoria
+[span] 11:00
+[span] 12:20
+[h3] Mantendo influência técnica quando tudo muda a cada 18 meses
+[p] Elemar Junior
+[span] 11:30
+[span] AMA
+[span] 11:30
+[span] 12:40
+[h3] Ask Me Anything com Waldemar Neto
+[p] Waldemar Neto
+[span] Fishbowl
+[span] 11:30
+[span] 12:20
+[h3] Métrica ou vigilância? O limite da observabilidade sobre pessoas
+[p] Rodrigo Miguel
+[span] Fishbowl
+[span] 11:30
+[span] 12:20
+[h3] Produtividade com IA: como medir?
+[p] Marcela Godoy, Juliano Martins
+[span] 12:30
+[span] Almoço
+[span] 12:30
+[span] 14:30
+[span] Almoço incluso no ingresso. Hora de continuar a conversa que começou na sala.
+[span] 14:30
+[span] Lições aprendidas
+[span] 14:30
+[span] 15:20
+[h3] Lições aprendidas na arquitetura e engenharia de software do Asaas
+[p] Joás Garcia
+[span] Mentoria
+[span] 14:30
+[span] 15:20
+[h3] IA dentro de casa: Guia prático de custos, arquitetura e produção
+[p] Raphael Pizzo
+[span] Mentoria
+[span] 14:30
+[span] 16:20
+[h3] O dia a dia de um Principal Engineer
+[p] Rafael Dohms, Damiana Costa
+[span] 🛠️
+[span] Workshop
+[span] 14:30
+[span] 16:20
+[h3] Second-brain: Será que a Inteligência Artificial Geral (AGI) já é possível de ser implantada na sua empresa?
+[p] Rodrigo Branas
+[span] Fishbowl
+[span] 14:30
+[span] 15:20
+[h3] Quando reescrever, quando refatorar, quando deixar quieto
+[p] Rafael Ponte, Alex Rios
+[span] 15:30
+[span] Roundtable
+[span] 15:30
+[span] 16:20
+[h3] Os novos sinais que importam num candidato
+[p] Marcelio Leal, Henrique Souza
+[span] Roundtable
+[span] 15:30
+[span] 16:20
+[h3] Quem revisa o código que a IA escreve? Code review na era do AI Slop
+[p] Alestan
+[span] Fishbowl
+[span] 15:30
+[span] 16:20
+[h3] Build vs. buy vs. wrap-an-LLM
+[p] Juliano Martins, sseraphini
+[span] 16:30
+[span] Coffee break
+[span] 16:30
+[span] 17:00
+[span] Coffee incluso. Recarregue e troque ideia com quem estava na sessão ao lado.
+[span] 17:00
+[span] AMA
+[span] 17:00
+[span] 17:50
+[h3] Ask Me Anything com Felipe Ribeiro
+[p] Felipe Ribeiro
+[span] Fishbowl
+[span] 17:00
+[span] 17:50
+[h3] IA no produto: como fazer as escolhas certas
+[p] Augusto Souza, Leonardo Accorsi
+[span] Fishbowl
+[span] 17:00
+[span] 17:50
+[h3] Quando o playbook antigo para de funcionar
+[p] Zarathon "Zara" Viana, Eduardo Matos
+[span] Fishbowl
+[span] 17:00
+[span] 17:50
+[h3] Construir reputação técnica sem virar influencer
+[p] Rafael Dohms, Elaine Watanabe, Paula Moura
+[span] Fishbowl
+[span] 17:00
+[span] 17:50
+[h3] Como estruturar uma organização de dados e IA
+[p] Marcela Godoy, Henrique Souza
+[span] 18:00
+[span] Lições aprendidas
+[span] 18:00
+[span] 18:50
+[h3] Lições aprendidas construindo a Resend
+[p] Bu Kinoshita
+[span] Fishbowl
+[span] 18:00
+[span] 18:50
+[h3] Como manter qualidade na era da IA
+[p] Erick Wendel, Waldemar Neto, Bruna Emerich
+[span] Mentoria
+[span] 18:00
+[span] 18:50
+[h3] AI Engineer
+[p] Rafael Dias
+[span] Fishbowl
+[span] 18:00
+[span] 18:50
+[h3] O dev que pensa como produto
+[p] Danilo Fuchs, Mario Souto
+[span] 19:00
+[span] Happy hour
+[span] 19:00
+[span] 20:00
+[span] Networking de verdade, sem crachá de cargo. Incluso no ingresso.
+[p] // quem vai
+[h2] pessoas que
+[span] já chegaram lá
+[p] Staff, Principal, CTOs e Heads de Nubank, Google, iFood, Mercado Livre, Oracle, QuintoAndar, PicPay e mais.
+[p] Alestan
+[p] AI & Data Engineering Leader @ Totvs
+[span] sessão
+[p] Alex Rios
+[p] Principal Engineer @ Memed
+[span] sessões
+[p] Ana Neri
+[p] Senior Software Engineer @ Clutch
+[p] André David
+[p] Coordenador @ FIAP
+[p] Augusto Souza
+[p] Sr. Head of Engineering @ QuintoAndar
+[span] sessão
+[p] Bruna Emerich
+[p] QA Manager @ Zoocha
+[span] sessão
+[p] Bu Kinoshita
+[p] CTO & Co-founder @ Resend
+[span] sessão
+[p] Damiana Costa
+[p] Principal Engineer
+[span] sessão
+[p] Danilo Fuchs
+[p] Product Engineer @ Salvy
+[span] sessão
+[p] Dennis Rojas
+[p] Staff Engineer
+[span] sessão
+[p] Douglas Hermann
+[p] Platform Engineering Manager @ SAP
+[span] sessão
+[p] Eduardo Matos
+[p] Founder @ Escola Forja
+[span] sessão
+[p] Elaine Watanabe
+[p] Staff Software Engineer
+[span] sessões
+[p] Elemar Junior
+[p] CEO @ Eximia.Co
+[span] sessões
+[p] Erick Wendel
+[p] Applied AI Engineer @ NodeSource
+[span] sessão
+[p] Felipe Ribeiro
+[p] Staff Engineer e Tech Lead @ Ex-Google, Netflix e Spotify
+[span] sessão
+[p] Gleica
+[p] Forward Deployed Engineer
+[span] sessão
+[p] Joás Garcia
+[p] Engineering Manager @ Asaas
+[span] sessões
+[p] Henrique Souza
+[p] Head de Engenharia - AI Ecosystem & AI Workforce @ iFood
+[span] sessões
+[p] Jessica Felix
+[p] Arquiteta de TI
+[p] Juliano Martins
+[p] GenAI & Engineering Research Sr. Manager @ Mercado Livre
+[span] sessões
+[p] Leonardo Accorsi
+[p] Head of Engineering @ QuintoAndar
+[span] sessão
+[p] Léo Sobral
+[p] Back-end sênior @ CRMBonus
+[p] Marcela Godoy
+[p] Tech Manager @ PicPay
+[span] sessões
+[p] Marcelio Leal
+[p] Engineering @ Google
+[span] sessões
+[p] Mario Souto
+[p] DevSoutinho & Staff Engineer @ Nubank
+[span] sessão
+[p] Paula Moura
+[p] Líder Técnica @ Banco do Brasil
+[span] sessão
+[p] Rafael Dias
+[p] Principal AI Engineer @ Oracle
+[span] sessão
+[p] Rafael Dohms
+[p] Distinguished Engineer @ SurveyMonkey
+[span] sessões
+[p] Rafael Ponte
+[p] Senior Staff Software Engineer @ Zup
+[span] sessão
+[p] Raphael Albino
+[p] Consultor
+[span] sessão
+[p] Raphael Pizzo
+[p] Líder Técnico @ Locaweb
+[span] sessão
+[p] Rodrigo Branas
+[p] branas.io
+[span] sessões
+[p] Rodrigo Miguel
+[p] VP de Engenharia @ Asaas
+[span] sessão
+[p] Rosicléia Frasson
+[p] Staff Software Engineer
+[span] sessão
+[p] sseraphini
+[p] CTO @ Woovi
+[span] sessão
+[p] Thuran
+[p] Coordenador de engenharia @ Asaas
+[span] sessão
+[p] Waldemar Neto
+[p] Co-Founder @ TechLeads.club
+[span] sessões
+[p] Wheslley Rimar Bezerra
+[p] Software Project Leader @ Mercado Livre
+[span] sessão
+[p] Zarathon "Zara" Viana
+[p] Sr Head of Engineering
+[span] sessões
+[kbd] esc
+[p] Ações
+[span] 🎟️
+[span] Copiar cupom PALESTRANTE20
+[span] 20% de desconto
+[span] Comprar ingresso com 20% off
+[span] abre o checkout com o cupom aplicado
+[span] Me surpreenda
+[span] abre uma sessão aleatória
+[span] Ver minha jornada
+[span] sessões marcadas e conflitos
+[p] Sugestões
+[span] Abertura
+[span] 09:00–09:30 · Auditório
+[span] A reinvenção da engenharia de software na era da IA generativa
+[span] 10:30–11:20 · Arquibancada · Douglas Hermann
+[span] Lições aprendidas na arquitetura e engenharia de software do Asaas
+[span] 14:30–15:20 · Auditório · Joás Garcia
+[span] Build vs. buy vs. wrap-an-LLM
+[span] 15:30–16:20 · Studio · Juliano Martins, sseraphini
+[span] ↑↓ navegar · ↵ abrir · esc fechar
+[span] itens indexados
+[p] // presença confirmada
+[h2] Te vejo lá?
+[p] // ingresso
+[h2] Poucas vagas.
+[h2] Preço sobe em breve.
+[p] O lote atual vira em
+[p] . Depois disso:
+[p] R$ 1.490
+[li] ✓ todas as
+[li] sessões, 5 salas
+[li] ✓ almoço + coffee break + happy hour
+[li] + empresas representadas na conversa
+[li] ✓ curadoria de participantes: só gente sênior+
+[span] lote atual · até 30/09
+[span] -20%
+[span] R$ 1.290
+[span] R$ 1.032
+[p] Você economiza
+[b] R$ 258
+[p] com o cupom
+[span] PALESTRANTE20
+[a] quero participar →
+[p] 1º lote
+[p] R$ 899
+[p] esgotado
+[p] 2º lote
+[p] R$ 1.190
+[p] esgotado
+[p] Lote atual
+[p] R$ 1.290
+[p] agora
+[p] Próximo lote
+[p] R$ 1.490
+[p] R$ 1.192 c/ cupom
+[p] // faq
+[h2] Perguntas frequentes
+[summary] Quando e onde?
+[p] 14 de novembro de 2026, das 9h às 19h (+ happy hour até 20h), no State Innovation Center, São Paulo, SP.
+[summary] Pra quem é?
+[p] Devs sênior e acima, staff engineers, tech leads, engineering managers e CTOs. A curadoria de participantes é parte do produto.
+[summary] O que é talkless?
+[p] Sem palco central e sem plateia calada. Fishbowls, mentorias, roundtables, workshops e AMAs em 5 salas simultâneas, onde a troca é obrigatória.
+[summary] O que está incluso?
+[p] Acesso a todas as sessões, almoço, coffee break e happy hour.
+[summary] Como uso o cupom?
+[p] Clique em qualquer botão desta página: o link já leva ao checkout com o cupom PALESTRANTE20 aplicado. Ou digite PALESTRANTE20 manualmente no checkout.
+[summary] Tem gravação?
+[p] O que acontece ali fica com quem estava presente. É exatamente por isso que funciona.
+[p] Feito pra quem já chegou longe.
+[span] E não considera isso o suficiente.
+[p] cupom de palestrante
+[span] PALESTRANTE20
+[span] copiar
+[p] 20% de desconto em qualquer lote. O link abaixo já aplica o cupom automaticamente.
+[a] usar cupom →
+[span] Página de divulgação feita por um palestrante. Evento oficial e ingressos em
+[a] codecon.dev/select
+[span] experience 26 · keep getting better
+[span] 14/11 · SP ·
+[span] PALESTRANTE20
+[p] = 20% off ·
+[span] R$ 1.290
+[b] R$ 1.032
+[a] comprar →

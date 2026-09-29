@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=1080, height=1920" />
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+<style>
+@font-face{font-family:"DM Sans";font-weight:400;src:url("assets/fonts/DMSans-Regular.woff") format("woff")}
+@font-face{font-family:"DM Sans";font-weight:700;src:url("assets/fonts/DMSans-Bold.woff") format("woff")}
+@font-face{font-family:"Space Mono";font-weight:400;src:url("assets/fonts/SpaceMono-Regular.woff") format("woff")}
+@font-face{font-family:"Space Mono";font-weight:700;src:url("assets/fonts/SpaceMono-Bold.woff") format("woff")}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:1080px;height:1920px;overflow:hidden;background:#050707}
+#root{position:relative;width:100%;height:100%;overflow:hidden;background:#050707;color:#f0efee;font-family:"DM Sans",sans-serif}
+.scene{position:absolute;inset:0;width:100%;height:100%;overflow:hidden}
+.bg{position:absolute;inset:0;background:#050707}
+.bg-pink{position:absolute;inset:0;background:#e73288}
+.glow{position:absolute;width:1400px;height:1400px;border-radius:50%;
+  background:radial-gradient(circle,rgba(231,50,136,.42),rgba(231,50,136,0) 65%);right:-600px;top:-420px}
+.grain{position:absolute;inset:0;opacity:.16;pointer-events:none;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='240' height='240'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+.mono{font-family:"Space Mono",monospace}
+.label{font-family:"Space Mono",monospace;text-transform:uppercase;letter-spacing:.2em;font-size:30px;color:rgba(240,239,238,.6)}
+.pink{color:#e73288}
+.logo{font-weight:700;font-size:64px;letter-spacing:-.02em;display:flex;align-items:baseline;gap:4px}
+.logo b{color:#e73288}
+.mask{display:block;overflow:hidden;padding-bottom:.06em}
+.mask > span{display:block}
+.chip{display:inline-block;background:#e73288;color:#fff;font-family:"Space Mono",monospace;font-weight:700;
+  border-radius:999px;padding:18px 34px;font-size:36px}
+.face{display:block;object-fit:cover;border-radius:26px;filter:grayscale(1) contrast(1.05);border:3px solid rgba(240,239,238,.08)}
+.face.me{filter:none;border:6px solid #e73288}
+
+.i1-in{position:absolute;inset:0;display:flex;flex-direction:column-reverse;align-items:center;justify-content:center;
+  gap:60px;padding:90px 70px}
+.card{display:block;height:1250px;width:auto;border-radius:32px;box-shadow:0 40px 120px rgba(0,0,0,.6)}
+.i1-txt{display:flex;flex-direction:column;gap:16px;align-items:center;text-align:center}
+.say{font-weight:700;font-size:120px;letter-spacing:-.05em;line-height:.95}
+.i2-in{position:absolute;inset:0;display:flex;flex-direction:column;justify-content:center;gap:46px;padding:0 70px}
+.meta{font-size:36px;letter-spacing:.1em;color:rgba(240,239,238,.7)}
+.blue{color:#5aa2ff;font-weight:700}
+.stitle{font-weight:700;font-size:150px;letter-spacing:-.05em;line-height:.95}
+.sdesc{font-size:46px;color:rgba(240,239,238,.7);max-width:940px;line-height:1.3}
+.duo{display:flex;flex-direction:column;gap:28px;margin-top:10px}
+.who{display:flex;align-items:center;gap:26px;border:2px solid rgba(240,239,238,.14);border-radius:28px;padding:18px 34px 18px 18px;background:rgba(240,239,238,.04)}
+.who .face{width:140px;height:140px;filter:none}
+.who b{display:block;font-family:"Space Mono",monospace;font-size:40px;text-transform:uppercase}
+.who span{display:block;font-size:30px;color:rgba(240,239,238,.6)}
+.rows{position:absolute;inset:0;display:flex;flex-direction:column;justify-content:center;gap:24px;transform:rotate(-6deg) scale(1.2)}
+.row{display:flex;gap:24px;width:max-content}
+.i3-over{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;gap:20px;
+  background:radial-gradient(ellipse at center,rgba(5,7,7,.92) 30%,rgba(5,7,7,.35) 75%);padding:0 60px}
+.i3-big{font-weight:700;font-size:190px;letter-spacing:-.05em;line-height:.9}
+.i3-sub{font-size:48px;color:rgba(240,239,238,.8);max-width:900px}
+
+.end-in{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;
+  gap:56px;padding:0 70px;color:#fff;text-align:center}
+.end-kicker{color:#fff;opacity:.9;font-size:34px}
+.ticket{border:5px dashed rgba(5,7,7,.85);border-radius:36px;padding:48px 40px;background:rgba(5,7,7,.12)}
+.ticket-code{font-weight:700;font-size:112px;letter-spacing:.04em;line-height:1;color:#fff;
+  clip-path:inset(0 100% 0 0)}
+.ticket-sub{margin-top:18px;font-size:30px;letter-spacing:.14em;color:#050707;font-weight:700}
+.prices{display:flex;align-items:baseline;gap:32px}
+.old{position:relative;font-size:56px;color:rgba(5,7,7,.72)}
+.old i{position:absolute;left:-6px;right:-6px;top:52%;height:7px;background:#050707;display:block;transform-origin:left center}
+.new{font-weight:700;font-size:128px;line-height:1;color:#050707}
+.end-meta{display:flex;flex-direction:column;align-items:center;gap:14px;margin-top:30px}
+.end-logo{color:#050707}
+.end-logo b{color:#fff}
+.end-exp{font-size:24px;letter-spacing:.3em;margin-left:14px;color:rgba(5,7,7,.7)}
+.end-faces{position:absolute;right:110px;top:50%;margin-top:-270px;display:grid;grid-template-columns:repeat(3,160px);gap:22px;transform:rotate(4deg)}
+.end-faces .face{width:160px;height:160px;border-color:rgba(5,7,7,.25);filter:grayscale(1) contrast(1.1)}
+.end-faces .face.me{filter:none;border:6px solid #050707}
+.end-url{white-space:nowrap;font-size:26px;color:#050707;letter-spacing:.06em}
+</style>
+</head>
+<body>
+<div id="root" data-composition-id="invite-9x16" data-start="0" data-duration="15" data-width="1080" data-height="1920" data-fps="30">
+
+<section id="i1" class="scene clip" data-start="0" data-duration="3.6" data-track-index="1">
+  <div class="bg"></div><div class="glow"></div><div class="grain"></div>
+  <div class="i1-in">
+    <img id="card" class="card" src="assets/promo/sibelius-stories.jpg" alt="sseraphini — presença confirmada" />
+    <div class="i1-txt">
+      <div class="label" id="i1-label">cto @ woovi · palestrante</div>
+      <div class="say" id="say1">eu vou estar</div>
+      <div class="say pink" id="say2">na select_</div>
+    </div>
+  </div>
+</section>
+
+<section id="i2" class="scene clip" data-start="3.6" data-duration="3.9" data-track-index="1">
+  <div class="bg"></div><div class="grain"></div>
+  <div class="i2-in">
+    <div class="meta mono" id="meta"><span class="blue">🐟 FISHBOWL</span> · STUDIO · 15:30</div>
+    <h2 class="stitle" id="stitle">
+      <span class="mask"><span id="t1">build vs. buy</span></span>
+      <span class="mask"><span id="t2">vs. <span class="pink">wrap-an-LLM</span></span></span>
+    </h2>
+    <div class="sdesc" id="sdesc">onde vale investir engenharia própria, e onde faz mais sentido aproveitar o que já existe.</div>
+    <div class="duo">
+      <div class="who" id="who1"><img class="face" src="assets/speakers/juliano-martins.jpg" alt="" /><div><b>Juliano Martins</b><span>GenAI & Eng. Research · Mercado Livre</span></div></div>
+      <div class="who" id="who2"><img class="face me" src="assets/speakers/sseraphini.jpg" alt="" /><div><b>sseraphini</b><span>CTO · Woovi</span></div></div>
+    </div>
+  </div>
+</section>
+
+<section id="i3" class="scene clip" data-start="7.5" data-duration="3.0" data-track-index="1">
+  <div class="bg"></div><div class="grain"></div>
+  <div class="rows" id="rows">
+    <div class="row" id="row-0"><img class="face" src="assets/speakers/alestan.jpg" alt="" width="230" height="230" style="width:230px;height:230px" /><img class="face" src="assets/speakers/andre-david.jpg" alt="" width="230" height="230" style="width:230px;height:230px" /><img class="face" src="assets/speakers/damiana-costa.jpg" alt="" width="230" height="230" style="width:230px;height:230px" /><img class="face" src="assets/speakers/douglas-hermann.jpg" alt="" width="230" height="230" style="width:230px;height:230px" /><img class="face" src="assets/speakers/elemar-junior.jpg" alt="" width="230" height="230" style="width:230px;height:230px" /><img class="face" src="assets/speakers/gleica.jpg" alt="" width="230" height="230" style="width:230px;height:230px" /><img class="face" src="assets/speakers/joas-garcia.jpg" alt="" width="230" height="230" style="width:230px;height:230px" /><img class="face" src="assets/speakers/leonardo-accorsi.jpg" alt="" width="230" height="230" style="width:230px;height:230px" /><img class="face" src="assets/speakers/mario-souto.jpg" alt="" width="230" height="230" style="width:230px;height:230px" /><img class="face" src="assets/speakers/rafael-dohms.jpg" alt="" width="230" height="230" style="width:230px;height:230px" /><img class="face" src="assets/speakers/raphael-pizzo.jpg" alt="" width="230" height="230" style="width:230px;height:230px" /><img class="face" src="assets/speakers/rosicleia-frasson.jpg" alt="" width="230" height="230" style="width:230px;height:230px" /><img class="face" src="assets/speakers/wheslley-rimar-bezerra.jpg" alt="" width="230" height="230" style="width:230px;height:230px" /><img class="face" src="assets/speakers/alestan.jpg" alt="" width="230" height="230" style="width:230px;height:230px" /><img class="face" src="assets/speakers/andre-david.jpg" alt="" width="230" height="230" style="width:230px;height:230px" /><img class="face" src="assets/speakers/damiana-costa.jpg" alt="" width="230" height="230" style="width:230px;height:230px" /><img class="face" src="assets/speakers/douglas-hermann.jpg" alt="" width="230" height="230" style="width:230px;height:230px" /><img class="face" src="assets/speakers/elemar-junior.jpg" alt="" width="230" height="230" style="width:230px;height:230px" /><img class="face" src="assets/speakers/gleica.jpg" alt="" width="230" height="230" style="width:230px;height:230px" /><img class="face" src="assets/speakers/joas-garcia.jpg" alt="" width="230" height="230" style="width:230px;height:230px" /><img class="face" src="assets/speakers/leonardo-accorsi.jpg" alt="" width="230" height="230" style="width:230px;height:230px" /><img class="face" src="assets/speakers/mario-souto.jpg" alt="" width="230" height="230" style="width:230px;height:230px" /><img class="face" src="assets/speakers/rafael-dohms.jpg" alt="" width="230" height="230" style="width:230px;height:230px" /><img class="face" src="assets/speakers/raphael-pizzo.jpg" alt="" width="230" height="230" style="width:230px;height:230px" /><img class="face" src="assets/speakers/rosicleia-frasson.jpg" alt="" width="230" height="230" style="width:230px;height:230px" /><img class="face" src="assets/speakers/wheslley-rimar-bezerra.jpg" alt="" width="230" height="230" style="width:230px;height:230px" /></div><div class="row" id="row-1"><img class="face" src="assets/speakers/alex-rios.jpg" alt="" width="230" height="230" style="width:230px;height:230px" /><img class="face" src="assets/speakers/augusto-souza.jpg" alt="" width="230" height="230" style="width:230px;height:230px" /><img class="face" src="assets/speakers/danilo-fuchs.jpg" alt="" width="230" height="230" style="width:230px;height:230px" /><img class="face" src="assets/speakers/eduardo-matos.jpg" alt="" width="230" height="230" style="width:230px;height:230px" /><img class="face" src="assets/speakers/erick-wendel.jpg" alt="" width="230" height="230" style="width:230px;height:230px" /><img class="face" src="assets/speakers/henrique-souza.jpg" alt="" width="230" height="230" style="width:230px;height:230px" /><img class="face" src="assets/speakers/juliano-martins.jpg" alt="" width="230" height="230" style="width:230px;height:230px" /><img class="face" src="assets/speakers/marcela-godoy.jpg" alt="" width="230" height="230" style="width:230px;height:230px" /><img class="face" src="assets/speakers/paula-moura.jpg" alt="" width="230" height="230" style="width:230px;height:230px" /><img class="face" src="assets/speakers/rafael-ponte.jpg" alt="" width="230" height="230" style="width:230px;height:230px" /><img class="face" src="assets/speakers/rodrigo-branas.jpg" alt="" width="230" height="230" style="width:230px;height:230px" /><img class="face" src="assets/speakers/thuran.jpg" alt="" width="230" height="230" style="width:230px;height:230px" /><img class="face" src="assets/speakers/zarathon-zara-viana.jpg" alt="" width="230" height="230" style="width:230px;height:230px" /><img class="face" src="assets/speakers/alex-rios.jpg" alt="" width="230" height="230" style="width:230px;height:230px" /><img class="face" src="assets/speakers/augusto-souza.jpg" alt="" width="230" height="230" style="width:230px;height:230px" /><img class="face" src="assets/speakers/danilo-fuchs.jpg" alt="" width="230" height="230" style="width:230px;height:230px" /><img class="face" src="assets/speakers/eduardo-matos.jpg" alt="" width="230" height="230" style="width:230px;height:230px" /><img class="face" src="assets/speakers/erick-wendel.jpg" alt="" width="230" height="230" style="width:230px;height:230px" /><img class="face" src="assets/speakers/henrique-souza.jpg" alt="" width="230" height="230" style="width:230px;height:230px" /><img class="face" src="assets/speakers/juliano-martins.jpg" alt="" width="230" height="230" style="width:230px;height:230px" /><img class="face" src="assets/speakers/marcela-godoy.jpg" alt="" width="230" height="230" style="width:230px;height:230px" /><img class="face" src="assets/speakers/paula-moura.jpg" alt="" width="230" height="230" style="width:230px;height:230px" /><img class="face" src="assets/speakers/rafael-ponte.jpg" alt="" width="230" height="230" style="width:230px;height:230px" /><img class="face" src="assets/speakers/rodrigo-branas.jpg" alt="" width="230" height="230" style="width:230px;height:230px" /><img class="face" src="assets/speakers/thuran.jpg" alt="" width="230" height="230" style="width:230px;height:230px" /><img class="face" src="assets/speakers/zarathon-zara-viana.jpg" alt="" width="230" height="230" style="width:230px;height:230px" /></div><div class="row" id="row-2"><img class="face" src="assets/speakers/ana-neri.jpg" alt="" width="230" height="230" style="width:230px;height:230px" /><img class="face" src="assets/speakers/bruna-emerich.jpg" alt="" width="230" height="230" style="width:230px;height:230px" /><img class="face" src="assets/speakers/dennis-rojas.jpg" alt="" width="230" height="230" style="width:230px;height:230px" /><img class="face" src="assets/speakers/elaine-watanabe.jpg" alt="" width="230" height="230" style="width:230px;height:230px" /><img class="face" src="assets/speakers/felipe-ribeiro.jpg" alt="" width="230" height="230" style="width:230px;height:230px" /><img class="face" src="assets/speakers/jessica-felix.jpg" alt="" width="230" height="230" style="width:230px;height:230px" /><img class="face" src="assets/speakers/leo-sobral.jpg" alt="" width="230" height="230" style="width:230px;height:230px" /><img class="face" src="assets/speakers/marcelio-leal.jpg" alt="" width="230" height="230" style="width:230px;height:230px" /><img class="face" src="assets/speakers/rafael-dias.jpg" alt="" width="230" height="230" style="width:230px;height:230px" /><img class="face" src="assets/speakers/raphael-albino.jpg" alt="" width="230" height="230" style="width:230px;height:230px" /><img class="face" src="assets/speakers/rodrigo-miguel.jpg" alt="" width="230" height="230" style="width:230px;height:230px" /><img class="face" src="assets/speakers/waldemar-neto.jpg" alt="" width="230" height="230" style="width:230px;height:230px" /><img class="face" src="assets/speakers/ana-neri.jpg" alt="" width="230" height="230" style="width:230px;height:230px" /><img class="face" src="assets/speakers/bruna-emerich.jpg" alt="" width="230" height="230" style="width:230px;height:230px" /><img class="face" src="assets/speakers/dennis-rojas.jpg" alt="" width="230" height="230" style="width:230px;height:230px" /><img class="face" src="assets/speakers/elaine-watanabe.jpg" alt="" width="230" height="230" style="width:230px;height:230px" /><img class="face" src="assets/speakers/felipe-ribeiro.jpg" alt="" width="230" height="230" style="width:230px;height:230px" /><img class="face" src="assets/speakers/jessica-felix.jpg" alt="" width="230" height="230" style="width:230px;height:230px" /><img class="face" src="assets/speakers/leo-sobral.jpg" alt="" width="230" height="230" style="width:230px;height:230px" /><img class="face" src="assets/speakers/marcelio-leal.jpg" alt="" width="230" height="230" style="width:230px;height:230px" /><img class="face" src="assets/speakers/rafael-dias.jpg" alt="" width="230" height="230" style="width:230px;height:230px" /><img class="face" src="assets/speakers/raphael-albino.jpg" alt="" width="230" height="230" style="width:230px;height:230px" /><img class="face" src="assets/speakers/rodrigo-miguel.jpg" alt="" width="230" height="230" style="width:230px;height:230px" /><img class="face" src="assets/speakers/waldemar-neto.jpg" alt="" width="230" height="230" style="width:230px;height:230px" /></div>
+  </div>
+  <div class="i3-over">
+    <div class="i3-big" id="i3-big">+38 pessoas</div>
+    <div class="i3-sub" id="i3-sub">de Nubank, Google, iFood, Oracle, Mercado Livre…</div>
+  </div>
+</section>
+
+<section id="end" class="scene clip" data-start="10.5" data-duration="4.5" data-track-index="1">
+  <div class="bg-pink" id="end-bg"></div>
+  <div class="grain"></div>
+  
+  <div id="end-in" class="end-in">
+    <div class="label end-kicker" id="end-kicker">vem comigo · use meu cupom</div>
+    <div class="ticket" id="ticket">
+      <div class="ticket-code mono" id="ticket-code">PALESTRANTE20</div>
+      <div class="ticket-sub mono" id="ticket-sub">20% OFF · CUPOM DE PALESTRANTE</div>
+    </div>
+    <div class="prices">
+      <span class="old mono" id="old">R$ 1.290<i id="strike"></i></span>
+      <span class="new mono" id="new">R$ 1.032</span>
+    </div>
+    <div class="end-meta">
+      <div class="logo end-logo" id="end-logo">select<b>//</b><span class="mono end-exp">EXPERIENCE 26</span></div>
+      <div class="mono end-url" id="end-url">14.11 · SÃO PAULO · select-experience-26.vercel.app</div>
+    </div>
+  </div>
+</section>
+<audio id="bgm" src="assets/audio/invite.mp3" data-start="0" data-duration="15" data-track-index="9" data-volume="0.85"></audio>
+</div>
+<script>
+const P = true;
+const tl = gsap.timeline({ paused: true });
+
+// i1 — promo card + "eu vou estar na select"
+tl.fromTo("#card", { scale: 1.15, rotation: P ? 0 : -4, opacity: 0 }, { scale: 1, rotation: P ? 0 : -2, opacity: 1, duration: 0.7, ease: "power3.out" }, 0.05);
+tl.to("#card", { rotation: 0, scale: 1.03, duration: 2.8, ease: "sine.inOut" }, 0.75);
+tl.fromTo("#i1-label", { opacity: 0 }, { opacity: 1, duration: 0.3 }, 0.5);
+tl.fromTo("#say1", { opacity: 0, y: 40 }, { opacity: 1, y: 0, duration: 0.4, ease: "power3.out" }, 0.7);
+tl.fromTo("#say2", { opacity: 0, y: 40 }, { opacity: 1, y: 0, duration: 0.4, ease: "power3.out" }, 1.05);
+
+// i2 — the session
+tl.fromTo("#meta", { opacity: 0, y: 20 }, { opacity: 1, y: 0, duration: 0.3 }, 3.65);
+tl.fromTo("#t1", { yPercent: 110 }, { yPercent: 0, duration: 0.5, ease: "power4.out" }, 3.8);
+tl.fromTo("#t2", { yPercent: 110 }, { yPercent: 0, duration: 0.5, ease: "power4.out" }, 4.1);
+tl.fromTo("#sdesc", { opacity: 0 }, { opacity: 1, duration: 0.4 }, 4.6);
+tl.fromTo("#who1", { opacity: 0, x: -60 }, { opacity: 1, x: 0, duration: 0.4, ease: "power3.out" }, 5.1);
+tl.fromTo("#who2", { opacity: 0, x: -60 }, { opacity: 1, x: 0, duration: 0.4, ease: "power3.out" }, 5.35);
+tl.to("#who2", { scale: 1.05, duration: 0.25, yoyo: true, repeat: 1 }, 6.2);
+
+// i3 — faces river
+tl.fromTo("#row-0", { x: 0 }, { x: -900, duration: 3, ease: "none" }, 7.5);
+tl.fromTo("#row-1", { x: -1200 }, { x: -300, duration: 3, ease: "none" }, 7.5);
+tl.fromTo("#row-2", { x: -200 }, { x: -1100, duration: 3, ease: "none" }, 7.5);
+tl.fromTo("#i3-big", { scale: 0.7, opacity: 0 }, { scale: 1, opacity: 1, duration: 0.4, ease: "back.out(2)" }, 7.7);
+tl.fromTo("#i3-sub", { opacity: 0 }, { opacity: 1, duration: 0.3 }, 8.1);
+
+tl.fromTo("#end-bg", { yPercent: 100 }, { yPercent: 0, duration: 0.45, ease: "power4.out" }, 10.5);
+if (!P) gsap.utils.toArray(".ef").forEach((el, i) => tl.fromTo(el, { opacity: 0, scale: 0.5 }, { opacity: 1, scale: 1, duration: 0.4, ease: "back.out(2)" }, 10.5 + 0.5 + i * 0.07));
+tl.fromTo("#end-kicker", { opacity: 0, y: 20 }, { opacity: 0.9, y: 0, duration: 0.35 }, 10.8);
+tl.fromTo("#ticket", { scale: 0.85, opacity: 0, rotation: -3 }, { scale: 1, opacity: 1, rotation: 0, duration: 0.5, ease: "back.out(2)" }, 10.85);
+tl.to("#ticket-code", { clipPath: "inset(0 0% 0 0)", duration: 0.75, ease: "steps(13)" }, 11.1);
+tl.fromTo("#ticket-sub", { opacity: 0 }, { opacity: 1, duration: 0.3 }, 11.8);
+tl.fromTo("#old", { opacity: 0, y: 20 }, { opacity: 1, y: 0, duration: 0.3 }, 12);
+tl.fromTo("#strike", { scaleX: 0 }, { scaleX: 1, duration: 0.3, ease: "power2.inOut" }, 12.35);
+tl.fromTo("#new", { opacity: 0, scale: 0.6 }, { opacity: 1, scale: 1, duration: 0.45, ease: "back.out(2.5)" }, 12.6);
+tl.fromTo("#end-logo", { opacity: 0, y: 20 }, { opacity: 1, y: 0, duration: 0.35 }, 13);
+tl.fromTo("#end-url", { opacity: 0 }, { opacity: 1, duration: 0.35 }, 13.2);
+tl.to("#ticket", { scale: 1.04, duration: 0.25, yoyo: true, repeat: 1, ease: "sine.inOut" }, 13.6);
+
+window.__timelines["invite-9x16"] = tl;
+</script>
+</body>
+</html>

@@ -1,0 +1,140 @@
+{
+  "files": [
+    {
+      "file": "28e60ca39c9ae554-s.0e_5-ojqbtsw9.woff2",
+      "family": "Space Mono",
+      "rawFamily": "Space Mono",
+      "subfamily": "Bold",
+      "postscript": "SpaceMono-Bold",
+      "weight": 700,
+      "style": "normal",
+      "variationAxes": [],
+      "identified": true,
+      "isIcon": false
+    },
+    {
+      "file": "4ba802ed8e67eac5-s.341_rbs6dql3t.woff2",
+      "family": "Space Mono",
+      "rawFamily": "Space Mono",
+      "subfamily": "Regular",
+      "postscript": "SpaceMono-Regular",
+      "weight": 400,
+      "style": "normal",
+      "variationAxes": [],
+      "identified": true,
+      "isIcon": false
+    },
+    {
+      "file": "5c285b27cdda1fe8-s.p.0lsanbtneewqp.woff2",
+      "family": "DM Sans 9pt",
+      "rawFamily": "DM Sans 9pt",
+      "subfamily": "Regular",
+      "postscript": "DMSans9pt-Regular",
+      "weight": 400,
+      "style": "normal",
+      "variationAxes": [
+        "wght"
+      ],
+      "identified": true,
+      "isIcon": false
+    },
+    {
+      "file": "8d05cfa5faa8406c-s.p.2p-978ij53_v6.woff2",
+      "family": "Space Mono",
+      "rawFamily": "Space Mono",
+      "subfamily": "Bold",
+      "postscript": "SpaceMono-Bold",
+      "weight": 700,
+      "style": "normal",
+      "variationAxes": [],
+      "identified": true,
+      "isIcon": false
+    },
+    {
+      "file": "b8f2b92a9960dd69-s.37aqrzupgb8zi.woff2",
+      "family": "Space Mono",
+      "rawFamily": "Space Mono",
+      "subfamily": "Bold",
+      "postscript": "SpaceMono-Bold",
+      "weight": 700,
+      "style": "normal",
+      "variationAxes": [],
+      "identified": true,
+      "isIcon": false
+    },
+    {
+      "file": "c3cb240f9c892514-s.270md_-rr62el.woff2",
+      "family": "DM Sans 9pt",
+      "rawFamily": "DM Sans 9pt",
+      "subfamily": "Regular",
+      "postscript": "DMSans9pt-Regular",
+      "weight": 400,
+      "style": "normal",
+      "variationAxes": [
+        "wght"
+      ],
+      "identified": true,
+      "isIcon": false
+    },
+    {
+      "file": "d7a0600e467cf0bd-s.40d3ll7mho212.woff2",
+      "family": "Space Mono",
+      "rawFamily": "Space Mono",
+      "subfamily": "Regular",
+      "postscript": "SpaceMono-Regular",
+      "weight": 400,
+      "style": "normal",
+      "variationAxes": [],
+      "identified": true,
+      "isIcon": false
+    },
+    {
+      "file": "dc0d9adbac686440-s.p.3-4lwpipb4a4k.woff2",
+      "family": "Space Mono",
+      "rawFamily": "Space Mono",
+      "subfamily": "Regular",
+      "postscript": "SpaceMono-Regular",
+      "weight": 400,
+      "style": "normal",
+      "variationAxes": [],
+      "identified": true,
+      "isIcon": false
+    }
+  ],
+  "families": [
+    {
+      "family": "DM Sans 9pt",
+      "weights": [
+        400
+      ],
+      "variable": true,
+      "fileCount": 2,
+      "files": [
+        "5c285b27cdda1fe8-s.p.0lsanbtneewqp.woff2",
+        "c3cb240f9c892514-s.270md_-rr62el.woff2"
+      ]
+    },
+    {
+      "family": "Space Mono",
+      "weights": [
+        400,
+        700
+      ],
+      "variable": false,
+      "fileCount": 6,
+      "files": [
+        "28e60ca39c9ae554-s.0e_5-ojqbtsw9.woff2",
+        "4ba802ed8e67eac5-s.341_rbs6dql3t.woff2",
+        "8d05cfa5faa8406c-s.p.2p-978ij53_v6.woff2",
+        "b8f2b92a9960dd69-s.37aqrzupgb8zi.woff2",
+        "d7a0600e467cf0bd-s.40d3ll7mho212.woff2",
+        "dc0d9adbac686440-s.p.3-4lwpipb4a4k.woff2"
+      ]
+    }
+  ],
+  "unidentified": [],
+  "meta": {
+    "generatedAt": "2026-09-28T16:08:10.789Z",
+    "tool": "fontkit"
+  }
+}

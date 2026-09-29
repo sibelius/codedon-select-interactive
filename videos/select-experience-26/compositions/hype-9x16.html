@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=1080, height=1920" />
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+<style>
+@font-face{font-family:"DM Sans";font-weight:400;src:url("assets/fonts/DMSans-Regular.woff") format("woff")}
+@font-face{font-family:"DM Sans";font-weight:700;src:url("assets/fonts/DMSans-Bold.woff") format("woff")}
+@font-face{font-family:"Space Mono";font-weight:400;src:url("assets/fonts/SpaceMono-Regular.woff") format("woff")}
+@font-face{font-family:"Space Mono";font-weight:700;src:url("assets/fonts/SpaceMono-Bold.woff") format("woff")}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:1080px;height:1920px;overflow:hidden;background:#050707}
+#root{position:relative;width:100%;height:100%;overflow:hidden;background:#050707;color:#f0efee;font-family:"DM Sans",sans-serif}
+.scene{position:absolute;inset:0;width:100%;height:100%;overflow:hidden}
+.bg{position:absolute;inset:0;background:#050707}
+.bg-pink{position:absolute;inset:0;background:#e73288}
+.glow{position:absolute;width:1400px;height:1400px;border-radius:50%;
+  background:radial-gradient(circle,rgba(231,50,136,.42),rgba(231,50,136,0) 65%);right:-600px;top:-420px}
+.grain{position:absolute;inset:0;opacity:.16;pointer-events:none;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='240' height='240'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+.mono{font-family:"Space Mono",monospace}
+.label{font-family:"Space Mono",monospace;text-transform:uppercase;letter-spacing:.2em;font-size:30px;color:rgba(240,239,238,.6)}
+.pink{color:#e73288}
+.logo{font-weight:700;font-size:64px;letter-spacing:-.02em;display:flex;align-items:baseline;gap:4px}
+.logo b{color:#e73288}
+.mask{display:block;overflow:hidden;padding-bottom:.06em}
+.mask > span{display:block}
+.chip{display:inline-block;background:#e73288;color:#fff;font-family:"Space Mono",monospace;font-weight:700;
+  border-radius:999px;padding:18px 34px;font-size:36px}
+.face{display:block;object-fit:cover;border-radius:26px;filter:grayscale(1) contrast(1.05);border:3px solid rgba(240,239,238,.08)}
+.face.me{filter:none;border:6px solid #e73288}
+
+.s1-in{position:absolute;inset:0;display:flex;flex-direction:column;justify-content:center;padding:0 80px;gap:50px}
+.big{font-weight:700;font-size:250px;line-height:.9;letter-spacing:-.05em}
+.big em{font-style:normal;display:inline-block}
+.grid{position:absolute;inset:0;display:grid;grid-template-columns:repeat(5,186px);grid-auto-rows:186px;gap:22px;
+  justify-content:center;align-content:center}
+.s2-over{position:absolute;left:0;right:0;bottom:0;padding:90px 70px 110px;
+  background:linear-gradient(to top,#050707 55%,rgba(5,7,7,0));display:flex;flex-direction:column;gap:12px}
+.count{font-weight:700;font-size:230px;line-height:.9;color:#e73288}
+.count-l{font-weight:700;font-size:72px;letter-spacing:-.03em}
+.cos{margin-top:14px;white-space:nowrap}
+.s3-in{position:absolute;inset:0;display:flex;flex-direction:column;align-items:stretch;
+  justify-content:center;gap:70px;padding:0 64px}
+.s3-head{display:flex;flex-direction:column;gap:18px;}
+.talk{font-weight:700;font-size:170px;letter-spacing:-.05em;line-height:.95}
+.talk-sub{font-size:54px;color:rgba(240,239,238,.75)}
+.term{border:2px solid rgba(240,239,238,.12);border-radius:28px;background:rgba(0,0,0,.55);overflow:hidden}
+.term-bar{display:flex;align-items:center;gap:12px;padding:22px 28px;border-bottom:2px solid rgba(240,239,238,.1)}
+.term-bar i{display:block;width:18px;height:18px;border-radius:50%;background:#ff5f57}
+.term-bar i:nth-child(2){background:#febc2e}.term-bar i:nth-child(3){background:#28c840}
+.term-bar span{margin-left:14px;font-size:24px;color:rgba(240,239,238,.4)}
+.term-body{padding:28px 30px;display:flex;flex-direction:column;gap:26px}
+.tline{display:flex;align-items:baseline;gap:20px;font-size:44px;white-space:nowrap}
+.tt{color:rgba(240,239,238,.45);font-size:.8em}
+.tag{font-weight:700;font-size:.7em;letter-spacing:.08em;min-width:190px}
+.ttl{font-weight:700;overflow:hidden;text-overflow:ellipsis}
+.s4-in{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;gap:10px}
+.stat{font-weight:700;font-size:440px;line-height:.85;letter-spacing:-.04em}
+.stat-l{font-weight:700;font-size:110px;letter-spacing:-.04em}
+.stat-m{margin-top:30px}
+
+.end-in{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;
+  gap:56px;padding:0 70px;color:#fff;text-align:center}
+.end-kicker{color:#fff;opacity:.9;font-size:34px}
+.ticket{border:5px dashed rgba(5,7,7,.85);border-radius:36px;padding:48px 40px;background:rgba(5,7,7,.12)}
+.ticket-code{font-weight:700;font-size:112px;letter-spacing:.04em;line-height:1;color:#fff;
+  clip-path:inset(0 100% 0 0)}
+.ticket-sub{margin-top:18px;font-size:30px;letter-spacing:.14em;color:#050707;font-weight:700}
+.prices{display:flex;align-items:baseline;gap:32px}
+.old{position:relative;font-size:56px;color:rgba(5,7,7,.72)}
+.old i{position:absolute;left:-6px;right:-6px;top:52%;height:7px;background:#050707;display:block;transform-origin:left center}
+.new{font-weight:700;font-size:128px;line-height:1;color:#050707}
+.end-meta{display:flex;flex-direction:column;align-items:center;gap:14px;margin-top:30px}
+.end-logo{color:#050707}
+.end-logo b{color:#fff}
+.end-exp{font-size:24px;letter-spacing:.3em;margin-left:14px;color:rgba(5,7,7,.7)}
+.end-faces{position:absolute;right:110px;top:50%;margin-top:-270px;display:grid;grid-template-columns:repeat(3,160px);gap:22px;transform:rotate(4deg)}
+.end-faces .face{width:160px;height:160px;border-color:rgba(5,7,7,.25);filter:grayscale(1) contrast(1.1)}
+.end-faces .face.me{filter:none;border:6px solid #050707}
+.end-url{white-space:nowrap;font-size:26px;color:#050707;letter-spacing:.06em}
+</style>
+</head>
+<body>
+<div id="root" data-composition-id="hype-9x16" data-start="0" data-duration="15" data-width="1080" data-height="1920" data-fps="30">
+
+<section id="s1" class="scene clip" data-start="0" data-duration="3.1" data-track-index="1">
+  <div class="bg"></div><div class="glow" id="s1-glow"></div><div class="grain"></div>
+  <div class="s1-in">
+    <div class="label" id="s1-label">select experience 26 · 14.11 · SP</div>
+    <h1 class="big">
+      <span class="mask"><span id="w1">keep</span></span>
+      <span class="mask"><span id="w2">getting</span></span>
+      <span class="mask"><span id="w3" class="pink">better<em id="cursor">_</em></span></span>
+    </h1>
+  </div>
+</section>
+
+<section id="s2" class="scene clip" data-start="3.1" data-duration="3.5" data-track-index="1">
+  <div class="bg"></div><div class="grain"></div>
+  <div class="grid" id="grid">
+    <img class="face me gface" id="gf-0" src="assets/speakers/sseraphini.jpg" alt="" width="186" height="186" style="width:186px;height:186px" /><img class="face gface" id="gf-1" src="assets/speakers/alestan.jpg" alt="" width="186" height="186" style="width:186px;height:186px" /><img class="face gface" id="gf-2" src="assets/speakers/alex-rios.jpg" alt="" width="186" height="186" style="width:186px;height:186px" /><img class="face gface" id="gf-3" src="assets/speakers/ana-neri.jpg" alt="" width="186" height="186" style="width:186px;height:186px" /><img class="face gface" id="gf-4" src="assets/speakers/andre-david.jpg" alt="" width="186" height="186" style="width:186px;height:186px" /><img class="face gface" id="gf-5" src="assets/speakers/augusto-souza.jpg" alt="" width="186" height="186" style="width:186px;height:186px" /><img class="face gface" id="gf-6" src="assets/speakers/bruna-emerich.jpg" alt="" width="186" height="186" style="width:186px;height:186px" /><img class="face gface" id="gf-7" src="assets/speakers/damiana-costa.jpg" alt="" width="186" height="186" style="width:186px;height:186px" /><img class="face gface" id="gf-8" src="assets/speakers/danilo-fuchs.jpg" alt="" width="186" height="186" style="width:186px;height:186px" /><img class="face gface" id="gf-9" src="assets/speakers/dennis-rojas.jpg" alt="" width="186" height="186" style="width:186px;height:186px" /><img class="face gface" id="gf-10" src="assets/speakers/douglas-hermann.jpg" alt="" width="186" height="186" style="width:186px;height:186px" /><img class="face gface" id="gf-11" src="assets/speakers/eduardo-matos.jpg" alt="" width="186" height="186" style="width:186px;height:186px" /><img class="face gface" id="gf-12" src="assets/speakers/elaine-watanabe.jpg" alt="" width="186" height="186" style="width:186px;height:186px" /><img class="face gface" id="gf-13" src="assets/speakers/elemar-junior.jpg" alt="" width="186" height="186" style="width:186px;height:186px" /><img class="face gface" id="gf-14" src="assets/speakers/erick-wendel.jpg" alt="" width="186" height="186" style="width:186px;height:186px" /><img class="face gface" id="gf-15" src="assets/speakers/felipe-ribeiro.jpg" alt="" width="186" height="186" style="width:186px;height:186px" /><img class="face gface" id="gf-16" src="assets/speakers/gleica.jpg" alt="" width="186" height="186" style="width:186px;height:186px" /><img class="face gface" id="gf-17" src="assets/speakers/henrique-souza.jpg" alt="" width="186" height="186" style="width:186px;height:186px" /><img class="face gface" id="gf-18" src="assets/speakers/jessica-felix.jpg" alt="" width="186" height="186" style="width:186px;height:186px" /><img class="face gface" id="gf-19" src="assets/speakers/joas-garcia.jpg" alt="" width="186" height="186" style="width:186px;height:186px" /><img class="face gface" id="gf-20" src="assets/speakers/juliano-martins.jpg" alt="" width="186" height="186" style="width:186px;height:186px" /><img class="face gface" id="gf-21" src="assets/speakers/leo-sobral.jpg" alt="" width="186" height="186" style="width:186px;height:186px" /><img class="face gface" id="gf-22" src="assets/speakers/leonardo-accorsi.jpg" alt="" width="186" height="186" style="width:186px;height:186px" /><img class="face gface" id="gf-23" src="assets/speakers/marcela-godoy.jpg" alt="" width="186" height="186" style="width:186px;height:186px" /><img class="face gface" id="gf-24" src="assets/speakers/marcelio-leal.jpg" alt="" width="186" height="186" style="width:186px;height:186px" /><img class="face gface" id="gf-25" src="assets/speakers/mario-souto.jpg" alt="" width="186" height="186" style="width:186px;height:186px" /><img class="face gface" id="gf-26" src="assets/speakers/paula-moura.jpg" alt="" width="186" height="186" style="width:186px;height:186px" /><img class="face gface" id="gf-27" src="assets/speakers/rafael-dias.jpg" alt="" width="186" height="186" style="width:186px;height:186px" /><img class="face gface" id="gf-28" src="assets/speakers/rafael-dohms.jpg" alt="" width="186" height="186" style="width:186px;height:186px" /><img class="face gface" id="gf-29" src="assets/speakers/rafael-ponte.jpg" alt="" width="186" height="186" style="width:186px;height:186px" />
+  </div>
+  <div class="s2-over" id="s2-over">
+    <div class="count mono"><span id="count">0</span></div>
+    <div class="count-l">palestrantes que <span class="pink">já chegaram lá</span></div>
+    <div class="label cos" id="cos">nubank · google · ifood · mercado livre · oracle · picpay · quintoandar</div>
+  </div>
+</section>
+
+<section id="s3" class="scene clip" data-start="6.6" data-duration="3.0" data-track-index="1">
+  <div class="bg"></div><div class="glow"></div><div class="grain"></div>
+  <div class="s3-in">
+    <div class="s3-head">
+      <div class="label">formato</div>
+      <div class="talk" id="talk">talkless<span class="pink">_</span></div>
+      <div class="talk-sub" id="talk-sub">sem palco. sem plateia calada.</div>
+    </div>
+    <div class="term" id="term">
+      <div class="term-bar"><i></i><i></i><i></i><span class="mono">tail -f programacao.log</span></div>
+      <div class="term-body"><div class="tline" id="tl-0"><span class="tt mono">09:30</span><span class="tag mono" style="color:#2f80ed">FISHBOWL</span><span class="ttl">o futuro das IDEs</span></div><div class="tline" id="tl-1"><span class="tt mono">10:30</span><span class="tag mono" style="color:#00a3a3">KATA</span><span class="ttl">modelando o Pix</span></div><div class="tline" id="tl-2"><span class="tt mono">11:30</span><span class="tag mono" style="color:#f2994a">ROUNDTABLE</span><span class="ttl">métrica ou vigilância?</span></div><div class="tline" id="tl-3"><span class="tt mono">14:30</span><span class="tag mono" style="color:#27ae60">MENTORIA</span><span class="ttl">o dia a dia de um principal engineer</span></div><div class="tline" id="tl-4"><span class="tt mono">15:30</span><span class="tag mono" style="color:#2f80ed">FISHBOWL</span><span class="ttl">build vs. buy vs. wrap-an-LLM</span></div><div class="tline" id="tl-5"><span class="tt mono">17:00</span><span class="tag mono" style="color:#9b51e0">AMA</span><span class="ttl">ask me anything: felipe ribeiro</span></div><div class="tline" id="tl-6"><span class="tt mono">18:00</span><span class="tag mono" style="color:#c9a227">LIÇÕES</span><span class="ttl">construindo a Resend</span></div></div>
+    </div>
+  </div>
+</section>
+
+<section id="s4" class="scene clip" data-start="9.6" data-duration="1.9" data-track-index="1">
+  <div class="bg"></div><div class="grain"></div>
+  <div class="s4-in">
+    <div class="stat mono" id="stat">300</div>
+    <div class="stat-l" id="stat-l">vagas. <span class="pink">apenas.</span></div>
+    <div class="label stat-m" id="stat-m">5 salas · 30 sessões · 1 dia</div>
+  </div>
+</section>
+
+<section id="end" class="scene clip" data-start="11.5" data-duration="3.5" data-track-index="1">
+  <div class="bg-pink" id="end-bg"></div>
+  <div class="grain"></div>
+  
+  <div id="end-in" class="end-in">
+    <div class="label end-kicker" id="end-kicker">garanta seu lugar com 20% off</div>
+    <div class="ticket" id="ticket">
+      <div class="ticket-code mono" id="ticket-code">PALESTRANTE20</div>
+      <div class="ticket-sub mono" id="ticket-sub">20% OFF · CUPOM DE PALESTRANTE</div>
+    </div>
+    <div class="prices">
+      <span class="old mono" id="old">R$ 1.290<i id="strike"></i></span>
+      <span class="new mono" id="new">R$ 1.032</span>
+    </div>
+    <div class="end-meta">
+      <div class="logo end-logo" id="end-logo">select<b>//</b><span class="mono end-exp">EXPERIENCE 26</span></div>
+      <div class="mono end-url" id="end-url">14.11 · SÃO PAULO · select-experience-26.vercel.app</div>
+    </div>
+  </div>
+</section>
+<audio id="bgm" src="assets/audio/hype.mp3" data-start="0" data-duration="15" data-track-index="9" data-volume="0.85"></audio>
+</div>
+<script>
+const P = true;
+const tl = gsap.timeline({ paused: true });
+
+// s1 — type slam
+tl.fromTo("#s1-label", { opacity: 0, y: 16 }, { opacity: 1, y: 0, duration: 0.4 }, 0.05);
+["#w1", "#w2", "#w3"].forEach((w, i) => tl.fromTo(w, { yPercent: 110 }, { yPercent: 0, duration: 0.5, ease: "power4.out" }, 0.2 + i * 0.4));
+tl.fromTo("#cursor", { opacity: 1 }, { opacity: 0, duration: 0.01, repeat: 5, yoyo: true, repeatDelay: 0.24 }, 1.3);
+tl.fromTo("#s1-glow", { scale: 0.7, opacity: 0 }, { scale: 1.1, opacity: 1, duration: 3, ease: "sine.out" }, 0);
+tl.to(".s1-in", { scale: 1.06, opacity: 0, duration: 0.3, ease: "power2.in" }, 2.8);
+
+// s2 — faces wall + count-up
+const faces = gsap.utils.toArray(".gface");
+const cx = 4 / 2, cy = 5 / 2;
+faces.forEach((el, i) => {
+  const d = Math.hypot((i % 5) - cx, Math.floor(i / 5) - cy);
+  tl.fromTo(el, { scale: 0.4, opacity: 0 }, { scale: 1, opacity: 1, duration: 0.45, ease: "back.out(1.8)" }, 3.15 + d * 0.09);
+});
+tl.fromTo("#grid", { scale: 1.12 }, { scale: 1, duration: 3.5, ease: "power1.out" }, 3.1);
+tl.fromTo("#s2-over", { opacity: 0, y: 40 }, { opacity: 1, y: 0, duration: 0.4 }, 3.7);
+const counter = { v: 0 };
+tl.to(counter, { v: 40, duration: 1.2, ease: "power2.out", onUpdate: () => { document.getElementById("count").textContent = Math.round(counter.v); } }, 3.8);
+tl.fromTo("#cos", { x: 0 }, { x: P ? -520 : -200, duration: 2.6, ease: "none" }, 4.0);
+
+// s3 — talkless + terminal lines
+tl.fromTo("#talk", { opacity: 0, x: -40 }, { opacity: 1, x: 0, duration: 0.4, ease: "power3.out" }, 6.65);
+tl.fromTo("#talk-sub", { opacity: 0 }, { opacity: 1, duration: 0.3 }, 6.95);
+tl.fromTo("#term", { opacity: 0, y: 60 }, { opacity: 1, y: 0, duration: 0.45, ease: "power3.out" }, 6.8);
+gsap.utils.toArray(".tline").forEach((el, i) => {
+  tl.fromTo(el, { opacity: 0, clipPath: "inset(0 100% 0 0)" }, { opacity: 1, clipPath: "inset(0 0% 0 0)", duration: 0.28, ease: "steps(10)" }, 7.05 + i * 0.24);
+});
+
+// s4 — stat slam
+tl.fromTo("#stat", { scale: 1.8, opacity: 0 }, { scale: 1, opacity: 1, duration: 0.4, ease: "expo.out" }, 9.62);
+tl.fromTo("#stat-l", { opacity: 0, y: 30 }, { opacity: 1, y: 0, duration: 0.3 }, 9.9);
+tl.fromTo("#stat-m", { opacity: 0 }, { opacity: 1, duration: 0.3 }, 10.2);
+
+tl.fromTo("#end-bg", { yPercent: 100 }, { yPercent: 0, duration: 0.45, ease: "power4.out" }, 11.5);
+if (!P) gsap.utils.toArray(".ef").forEach((el, i) => tl.fromTo(el, { opacity: 0, scale: 0.5 }, { opacity: 1, scale: 1, duration: 0.4, ease: "back.out(2)" }, 11.5 + 0.5 + i * 0.07));
+tl.fromTo("#end-kicker", { opacity: 0, y: 20 }, { opacity: 0.9, y: 0, duration: 0.35 }, 11.8);
+tl.fromTo("#ticket", { scale: 0.85, opacity: 0, rotation: -3 }, { scale: 1, opacity: 1, rotation: 0, duration: 0.5, ease: "back.out(2)" }, 11.85);
+tl.to("#ticket-code", { clipPath: "inset(0 0% 0 0)", duration: 0.75, ease: "steps(13)" }, 12.1);
+tl.fromTo("#ticket-sub", { opacity: 0 }, { opacity: 1, duration: 0.3 }, 12.8);
+tl.fromTo("#old", { opacity: 0, y: 20 }, { opacity: 1, y: 0, duration: 0.3 }, 13);
+tl.fromTo("#strike", { scaleX: 0 }, { scaleX: 1, duration: 0.3, ease: "power2.inOut" }, 13.35);
+tl.fromTo("#new", { opacity: 0, scale: 0.6 }, { opacity: 1, scale: 1, duration: 0.45, ease: "back.out(2.5)" }, 13.6);
+tl.fromTo("#end-logo", { opacity: 0, y: 20 }, { opacity: 1, y: 0, duration: 0.35 }, 14);
+tl.fromTo("#end-url", { opacity: 0 }, { opacity: 1, duration: 0.35 }, 14.2);
+tl.to("#ticket", { scale: 1.04, duration: 0.25, yoyo: true, repeat: 1, ease: "sine.inOut" }, 14.6);
+
+window.__timelines["hype-9x16"] = tl;
+</script>
+</body>
+</html>

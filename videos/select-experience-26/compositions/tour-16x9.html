@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=1920, height=1080" />
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+<style>
+@font-face{font-family:"DM Sans";font-weight:400;src:url("assets/fonts/DMSans-Regular.woff") format("woff")}
+@font-face{font-family:"DM Sans";font-weight:700;src:url("assets/fonts/DMSans-Bold.woff") format("woff")}
+@font-face{font-family:"Space Mono";font-weight:400;src:url("assets/fonts/SpaceMono-Regular.woff") format("woff")}
+@font-face{font-family:"Space Mono";font-weight:700;src:url("assets/fonts/SpaceMono-Bold.woff") format("woff")}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:1920px;height:1080px;overflow:hidden;background:#050707}
+#root{position:relative;width:100%;height:100%;overflow:hidden;background:#050707;color:#f0efee;font-family:"DM Sans",sans-serif}
+.scene{position:absolute;inset:0;width:100%;height:100%;overflow:hidden}
+.bg{position:absolute;inset:0;background:#050707}
+.bg-pink{position:absolute;inset:0;background:#e73288}
+.glow{position:absolute;width:1300px;height:1300px;border-radius:50%;
+  background:radial-gradient(circle,rgba(231,50,136,.42),rgba(231,50,136,0) 65%);right:-420px;top:-520px}
+.grain{position:absolute;inset:0;opacity:.16;pointer-events:none;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='240' height='240'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+.mono{font-family:"Space Mono",monospace}
+.label{font-family:"Space Mono",monospace;text-transform:uppercase;letter-spacing:.2em;font-size:24px;color:rgba(240,239,238,.6)}
+.pink{color:#e73288}
+.logo{font-weight:700;font-size:52px;letter-spacing:-.02em;display:flex;align-items:baseline;gap:4px}
+.logo b{color:#e73288}
+.mask{display:block;overflow:hidden;padding-bottom:.06em}
+.mask > span{display:block}
+.chip{display:inline-block;background:#e73288;color:#fff;font-family:"Space Mono",monospace;font-weight:700;
+  border-radius:999px;padding:14px 28px;font-size:30px}
+.face{display:block;object-fit:cover;border-radius:22px;filter:grayscale(1) contrast(1.05);border:3px solid rgba(240,239,238,.08)}
+.face.me{filter:none;border:6px solid #e73288}
+
+.tour-in{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;
+  gap:34px;padding:40px 0 0}
+.caps{display:flex;flex-direction:row;align-items:baseline;gap:28px;text-align:center}
+.cap{font-weight:700;font-size:72px;letter-spacing:-.04em;line-height:1}
+.cap2{font-size:34px;color:#e73288}
+.device{border-radius:22px;overflow:hidden;border:2px solid rgba(240,239,238,.16);
+  box-shadow:0 50px 140px rgba(0,0,0,.7),0 0 0 2px rgba(240,239,238,.08);background:#111}
+.chrome{display:flex;align-items:center;gap:10px;height:46px;padding:0 20px;background:#1a1c1c}
+.chrome i{display:block;width:14px;height:14px;border-radius:50%;background:#ff5f57}
+.chrome i:nth-child(2){background:#febc2e}.chrome i:nth-child(3){background:#28c840}
+.chrome span{margin:0 auto;font-size:18px;color:rgba(240,239,238,.5);background:#050707;padding:6px 120px;border-radius:8px}
+.screen{overflow:hidden;width:1500px;height:844px}
+.shot{display:block;width:100%;height:100%;object-fit:cover;object-position:top center}
+
+.end-in{position:absolute;inset:0;display:flex;flex-direction:column;align-items:flex-start;justify-content:center;
+  gap:34px;padding:0 140px;color:#fff;text-align:left}
+.end-kicker{color:#fff;opacity:.9;font-size:28px}
+.ticket{border:5px dashed rgba(5,7,7,.85);border-radius:36px;padding:40px 64px;background:rgba(5,7,7,.12)}
+.ticket-code{font-weight:700;font-size:112px;letter-spacing:.04em;line-height:1;color:#fff;
+  clip-path:inset(0 100% 0 0)}
+.ticket-sub{margin-top:18px;font-size:30px;letter-spacing:.14em;color:#050707;font-weight:700}
+.prices{display:flex;align-items:baseline;gap:32px}
+.old{position:relative;font-size:58px;color:rgba(5,7,7,.72)}
+.old i{position:absolute;left:-6px;right:-6px;top:52%;height:7px;background:#050707;display:block;transform-origin:left center}
+.new{font-weight:700;font-size:132px;line-height:1;color:#050707}
+.end-meta{display:flex;flex-direction:column;align-items:flex-start;gap:14px;margin-top:6px}
+.end-logo{color:#050707}
+.end-logo b{color:#fff}
+.end-exp{font-size:20px;letter-spacing:.3em;margin-left:14px;color:rgba(5,7,7,.7)}
+.end-faces{position:absolute;right:110px;top:50%;margin-top:-270px;display:grid;grid-template-columns:repeat(3,160px);gap:22px;transform:rotate(4deg)}
+.end-faces .face{width:160px;height:160px;border-color:rgba(5,7,7,.25);filter:grayscale(1) contrast(1.1)}
+.end-faces .face.me{filter:none;border:6px solid #050707}
+.end-url{white-space:nowrap;font-size:28px;color:#050707;letter-spacing:.06em}
+</style>
+</head>
+<body>
+<div id="root" data-composition-id="tour-16x9" data-start="0" data-duration="15" data-width="1920" data-height="1080" data-fps="30">
+
+<section id="t1" class="scene clip" data-start="0" data-duration="2.8" data-track-index="1">
+  <div class="bg"></div><div class="glow"></div><div class="grain"></div>
+  <div class="tour-in">
+    <div class="caps">
+      <div class="cap" id="t1-cap">a programação inteira da select</div>
+      <div class="cap2 mono" id="t1-cap2">interativa_</div>
+    </div>
+    <div class="device" id="t1-dev">
+      <div class="chrome"><i></i><i></i><i></i><span class="mono">select-experience-26.vercel.app</span></div>
+      <div class="screen"><img id="t1-img" style="transform-origin:25% 35%" class="shot" src="assets/site/land-01-hero.png" alt="" /></div>
+    </div>
+  </div>
+</section>
+<section id="t2" class="scene clip" data-start="2.8" data-duration="2.8" data-track-index="1">
+  <div class="bg"></div><div class="glow"></div><div class="grain"></div>
+  <div class="tour-in">
+    <div class="caps">
+      <div class="cap" id="t2-cap">⌘K busca tudo</div>
+      <div class="cap2 mono" id="t2-cap2">sessões, pessoas, empresas</div>
+    </div>
+    <div class="device" id="t2-dev">
+      <div class="chrome"><i></i><i></i><i></i><span class="mono">select-experience-26.vercel.app</span></div>
+      <div class="screen"><img id="t2-img" style="transform-origin:50% 30%" class="shot" src="assets/site/land-02-palette.png" alt="" /></div>
+    </div>
+  </div>
+</section>
+<section id="t3" class="scene clip" data-start="5.6" data-duration="2.8" data-track-index="1">
+  <div class="bg"></div><div class="glow"></div><div class="grain"></div>
+  <div class="tour-in">
+    <div class="caps">
+      <div class="cap" id="t3-cap">5 salas simultâneas</div>
+      <div class="cap2 mono" id="t3-cap2">filtre por tema</div>
+    </div>
+    <div class="device" id="t3-dev">
+      <div class="chrome"><i></i><i></i><i></i><span class="mono">select-experience-26.vercel.app</span></div>
+      <div class="screen"><img id="t3-img" style="transform-origin:35% 55%" class="shot" src="assets/site/land-03-schedule.png" alt="" /></div>
+    </div>
+  </div>
+</section>
+<section id="t4" class="scene clip" data-start="8.4" data-duration="2.8" data-track-index="1">
+  <div class="bg"></div><div class="glow"></div><div class="grain"></div>
+  <div class="tour-in">
+    <div class="caps">
+      <div class="cap" id="t4-cap">★ monte sua jornada</div>
+      <div class="cap2 mono" id="t4-cap2">e a gente avisa conflito</div>
+    </div>
+    <div class="device" id="t4-dev">
+      <div class="chrome"><i></i><i></i><i></i><span class="mono">select-experience-26.vercel.app</span></div>
+      <div class="screen"><img id="t4-img" style="transform-origin:100% 25%" class="shot" src="assets/site/land-05-agenda.png" alt="" /></div>
+    </div>
+  </div>
+</section>
+<section id="end" class="scene clip" data-start="11.2" data-duration="3.8" data-track-index="1">
+  <div class="bg-pink" id="end-bg"></div>
+  <div class="grain"></div>
+  <div class="end-faces" id="end-faces"><img class="face me ef" src="assets/speakers/sseraphini.jpg" alt="" /><img class="face ef" src="assets/speakers/mario-souto.jpg" alt="" /><img class="face ef" src="assets/speakers/erick-wendel.jpg" alt="" /><img class="face ef" src="assets/speakers/elemar-junior.jpg" alt="" /><img class="face ef" src="assets/speakers/waldemar-neto.jpg" alt="" /><img class="face ef" src="assets/speakers/rafael-dohms.jpg" alt="" /><img class="face ef" src="assets/speakers/felipe-ribeiro.jpg" alt="" /><img class="face ef" src="assets/speakers/marcela-godoy.jpg" alt="" /><img class="face ef" src="assets/speakers/juliano-martins.jpg" alt="" /></div>
+  <div id="end-in" class="end-in">
+    <div class="label end-kicker" id="end-kicker">tudo isso te esperando em 14.11</div>
+    <div class="ticket" id="ticket">
+      <div class="ticket-code mono" id="ticket-code">PALESTRANTE20</div>
+      <div class="ticket-sub mono" id="ticket-sub">20% OFF · CUPOM DE PALESTRANTE</div>
+    </div>
+    <div class="prices">
+      <span class="old mono" id="old">R$ 1.290<i id="strike"></i></span>
+      <span class="new mono" id="new">R$ 1.032</span>
+    </div>
+    <div class="end-meta">
+      <div class="logo end-logo" id="end-logo">select<b>//</b><span class="mono end-exp">EXPERIENCE 26</span></div>
+      <div class="mono end-url" id="end-url">14.11 · SÃO PAULO · select-experience-26.vercel.app</div>
+    </div>
+  </div>
+</section>
+<audio id="bgm" src="assets/audio/tour.mp3" data-start="0" data-duration="15" data-track-index="9" data-volume="0.85"></audio>
+</div>
+<script>
+const P = false;
+const tl = gsap.timeline({ paused: true });
+
+tl.fromTo("#t1-dev", { y: 90, opacity: 0.35, scale: 0.94 }, { y: 0, opacity: 1, scale: 1, duration: 0.35, ease: "power3.out" }, 0.02);
+tl.fromTo("#t1-img", { scale: 1.02 }, { scale: 1.32, duration: 2.8, ease: "power1.inOut" }, 0);
+tl.fromTo("#t1-cap", { opacity: 0, y: 30 }, { opacity: 1, y: 0, duration: 0.3, ease: "power3.out" }, 0.05);
+tl.fromTo("#t1-cap2", { opacity: 0 }, { opacity: 1, duration: 0.3 }, 0.45);
+tl.fromTo("#t2-dev", { y: 90, opacity: 0.35, scale: 0.94 }, { y: 0, opacity: 1, scale: 1, duration: 0.35, ease: "power3.out" }, 2.82);
+tl.fromTo("#t2-img", { scale: 1.02 }, { scale: 1.32, duration: 2.8, ease: "power1.inOut" }, 2.8);
+tl.fromTo("#t2-cap", { opacity: 0, y: 30 }, { opacity: 1, y: 0, duration: 0.3, ease: "power3.out" }, 2.8499999999999996);
+tl.fromTo("#t2-cap2", { opacity: 0 }, { opacity: 1, duration: 0.3 }, 3.25);
+tl.fromTo("#t3-dev", { y: 90, opacity: 0.35, scale: 0.94 }, { y: 0, opacity: 1, scale: 1, duration: 0.35, ease: "power3.out" }, 5.619999999999999);
+tl.fromTo("#t3-img", { scale: 1.02 }, { scale: 1.32, duration: 2.8, ease: "power1.inOut" }, 5.6);
+tl.fromTo("#t3-cap", { opacity: 0, y: 30 }, { opacity: 1, y: 0, duration: 0.3, ease: "power3.out" }, 5.6499999999999995);
+tl.fromTo("#t3-cap2", { opacity: 0 }, { opacity: 1, duration: 0.3 }, 6.05);
+tl.fromTo("#t4-dev", { y: 90, opacity: 0.35, scale: 0.94 }, { y: 0, opacity: 1, scale: 1, duration: 0.35, ease: "power3.out" }, 8.42);
+tl.fromTo("#t4-img", { scale: 1.02 }, { scale: 1.32, duration: 2.8, ease: "power1.inOut" }, 8.4);
+tl.fromTo("#t4-cap", { opacity: 0, y: 30 }, { opacity: 1, y: 0, duration: 0.3, ease: "power3.out" }, 8.450000000000001);
+tl.fromTo("#t4-cap2", { opacity: 0 }, { opacity: 1, duration: 0.3 }, 8.85);
+tl.fromTo("#end-bg", { yPercent: 100 }, { yPercent: 0, duration: 0.45, ease: "power4.out" }, 11.2);
+if (!P) gsap.utils.toArray(".ef").forEach((el, i) => tl.fromTo(el, { opacity: 0, scale: 0.5 }, { opacity: 1, scale: 1, duration: 0.4, ease: "back.out(2)" }, 11.2 + 0.5 + i * 0.07));
+tl.fromTo("#end-kicker", { opacity: 0, y: 20 }, { opacity: 0.9, y: 0, duration: 0.35 }, 11.5);
+tl.fromTo("#ticket", { scale: 0.85, opacity: 0, rotation: -3 }, { scale: 1, opacity: 1, rotation: 0, duration: 0.5, ease: "back.out(2)" }, 11.549999999999999);
+tl.to("#ticket-code", { clipPath: "inset(0 0% 0 0)", duration: 0.75, ease: "steps(13)" }, 11.799999999999999);
+tl.fromTo("#ticket-sub", { opacity: 0 }, { opacity: 1, duration: 0.3 }, 12.5);
+tl.fromTo("#old", { opacity: 0, y: 20 }, { opacity: 1, y: 0, duration: 0.3 }, 12.7);
+tl.fromTo("#strike", { scaleX: 0 }, { scaleX: 1, duration: 0.3, ease: "power2.inOut" }, 13.049999999999999);
+tl.fromTo("#new", { opacity: 0, scale: 0.6 }, { opacity: 1, scale: 1, duration: 0.45, ease: "back.out(2.5)" }, 13.299999999999999);
+tl.fromTo("#end-logo", { opacity: 0, y: 20 }, { opacity: 1, y: 0, duration: 0.35 }, 13.7);
+tl.fromTo("#end-url", { opacity: 0 }, { opacity: 1, duration: 0.35 }, 13.899999999999999);
+tl.to("#ticket", { scale: 1.04, duration: 0.25, yoyo: true, repeat: 1, ease: "sine.inOut" }, 14.299999999999999);
+
+window.__timelines["tour-16x9"] = tl;
+</script>
+</body>
+</html>

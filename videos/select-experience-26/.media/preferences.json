@@ -1,0 +1,20 @@
+{
+  "version": 1,
+  "preferences": {
+    "flow": {
+      "value": "automation",
+      "confirmed_in": [
+        "select-experience-26"
+      ],
+      "updated_at": "2026-09-28T16:07:19.175Z"
+    },
+    "style_preset.product-launch-video": {
+      "value": "broadside",
+      "confirmed_in": [
+        "select-experience-26"
+      ],
+      "updated_at": "2026-09-28T16:08:24.855Z"
+    }
+  },
+  "sightings": {}
+}

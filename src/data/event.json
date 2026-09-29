@@ -1,0 +1,977 @@
+{
+ "speakers": [
+  {
+   "id": "alestan",
+   "name": "Alestan",
+   "role": "AI & Data Engineering Leader",
+   "company": "Totvs",
+   "img": "/speakers/alestan.jpg",
+   "sessions": [
+    "quem-revisa-o-codigo-que-a-ia-escreve-code-review-na-era-do-"
+   ]
+  },
+  {
+   "id": "alex-rios",
+   "name": "Alex Rios",
+   "role": "Principal Engineer",
+   "company": "Memed",
+   "img": "/speakers/alex-rios.jpg",
+   "sessions": [
+    "o-que-separa-o-senior-excelente-do-principal-e-nao-e-tecnica",
+    "quando-reescrever-quando-refatorar-quando-deixar-quieto"
+   ]
+  },
+  {
+   "id": "ana-neri",
+   "name": "Ana Neri",
+   "role": "Senior Software Engineer",
+   "company": "Clutch",
+   "img": "/speakers/ana-neri.jpg",
+   "sessions": []
+  },
+  {
+   "id": "andre-david",
+   "name": "André David",
+   "role": "Coordenador",
+   "company": "FIAP",
+   "img": "/speakers/andre-david.jpg",
+   "sessions": []
+  },
+  {
+   "id": "augusto-souza",
+   "name": "Augusto Souza",
+   "role": "Sr. Head of Engineering",
+   "company": "QuintoAndar",
+   "img": "/speakers/augusto-souza.jpg",
+   "sessions": [
+    "ia-no-produto-como-fazer-as-escolhas-certas"
+   ]
+  },
+  {
+   "id": "bruna-emerich",
+   "name": "Bruna Emerich",
+   "role": "QA Manager",
+   "company": "Zoocha",
+   "img": "/speakers/bruna-emerich.jpg",
+   "sessions": [
+    "como-manter-qualidade-na-era-da-ia"
+   ]
+  },
+  {
+   "id": "bu-kinoshita",
+   "name": "Bu Kinoshita",
+   "role": "CTO & Co-founder",
+   "company": "Resend",
+   "img": "/speakers/bu-kinoshita.jpg",
+   "sessions": [
+    "licoes-aprendidas-construindo-a-resend"
+   ]
+  },
+  {
+   "id": "damiana-costa",
+   "name": "Damiana Costa",
+   "role": "Principal Engineer",
+   "company": "",
+   "img": "/speakers/damiana-costa.jpg",
+   "sessions": [
+    "o-dia-a-dia-de-um-principal-engineer"
+   ]
+  },
+  {
+   "id": "danilo-fuchs",
+   "name": "Danilo Fuchs",
+   "role": "Product Engineer",
+   "company": "Salvy",
+   "img": "/speakers/danilo-fuchs.jpg",
+   "sessions": [
+    "o-dev-que-pensa-como-produto"
+   ]
+  },
+  {
+   "id": "dennis-rojas",
+   "name": "Dennis Rojas",
+   "role": "Staff Engineer",
+   "company": "",
+   "img": "/speakers/dennis-rojas.jpg",
+   "sessions": [
+    "modelando-o-pix"
+   ]
+  },
+  {
+   "id": "douglas-hermann",
+   "name": "Douglas Hermann",
+   "role": "Platform Engineering Manager",
+   "company": "SAP",
+   "img": "/speakers/douglas-hermann.jpg",
+   "sessions": [
+    "a-reinvencao-da-engenharia-de-software-na-era-da-ia-generati"
+   ]
+  },
+  {
+   "id": "eduardo-matos",
+   "name": "Eduardo Matos",
+   "role": "Founder",
+   "company": "Escola Forja",
+   "img": "/speakers/eduardo-matos.jpg",
+   "sessions": [
+    "quando-o-playbook-antigo-para-de-funcionar"
+   ]
+  },
+  {
+   "id": "elaine-watanabe",
+   "name": "Elaine Watanabe",
+   "role": "Staff Software Engineer",
+   "company": "",
+   "img": "/speakers/elaine-watanabe.jpg",
+   "sessions": [
+    "lideranca-sem-cracha-de-gestor-o-impacto-estrategico-do-staf",
+    "construir-reputacao-tecnica-sem-virar-influencer"
+   ]
+  },
+  {
+   "id": "elemar-junior",
+   "name": "Elemar Junior",
+   "role": "CEO",
+   "company": "Eximia.Co",
+   "img": "/speakers/elemar-junior.jpg",
+   "sessions": [
+    "arquitetura-na-era-da-ia",
+    "mantendo-influencia-tecnica-quando-tudo-muda-a-cada-18-meses"
+   ]
+  },
+  {
+   "id": "erick-wendel",
+   "name": "Erick Wendel",
+   "role": "Applied AI Engineer",
+   "company": "NodeSource",
+   "img": "/speakers/erick-wendel.jpg",
+   "sessions": [
+    "como-manter-qualidade-na-era-da-ia"
+   ]
+  },
+  {
+   "id": "felipe-ribeiro",
+   "name": "Felipe Ribeiro",
+   "role": "Staff Engineer e Tech Lead",
+   "company": "Ex-Google, Netflix e Spotify",
+   "img": "/speakers/felipe-ribeiro.jpg",
+   "sessions": [
+    "ask-me-anything-com-felipe-ribeiro"
+   ]
+  },
+  {
+   "id": "gleica",
+   "name": "Gleica",
+   "role": "Forward Deployed Engineer",
+   "company": "",
+   "img": "/speakers/gleica.jpg",
+   "sessions": [
+    "proximos-anos-do-mercado-de-tech"
+   ]
+  },
+  {
+   "id": "joas-garcia",
+   "name": "Joás Garcia",
+   "role": "Engineering Manager",
+   "company": "Asaas",
+   "img": "/speakers/joas-garcia.jpg",
+   "sessions": [
+    "o-futuro-das-ides",
+    "licoes-aprendidas-na-arquitetura-e-engenharia-de-software-do"
+   ]
+  },
+  {
+   "id": "henrique-souza",
+   "name": "Henrique Souza",
+   "role": "Head de Engenharia - AI Ecosystem & AI Workforce",
+   "company": "iFood",
+   "img": "/speakers/henrique-souza.jpg",
+   "sessions": [
+    "os-novos-sinais-que-importam-num-candidato",
+    "como-estruturar-uma-organizacao-de-dados-e-ia"
+   ]
+  },
+  {
+   "id": "jessica-felix",
+   "name": "Jessica Felix",
+   "role": "Arquiteta de TI",
+   "company": "",
+   "img": "/speakers/jessica-felix.jpg",
+   "sessions": []
+  },
+  {
+   "id": "juliano-martins",
+   "name": "Juliano Martins",
+   "role": "GenAI & Engineering Research Sr. Manager",
+   "company": "Mercado Livre",
+   "img": "/speakers/juliano-martins.jpg",
+   "sessions": [
+    "produtividade-com-ia-como-medir",
+    "build-vs-buy-vs-wrap-an-llm"
+   ]
+  },
+  {
+   "id": "leonardo-accorsi",
+   "name": "Leonardo Accorsi",
+   "role": "Head of Engineering",
+   "company": "QuintoAndar",
+   "img": "/speakers/leonardo-accorsi.jpg",
+   "sessions": [
+    "ia-no-produto-como-fazer-as-escolhas-certas"
+   ]
+  },
+  {
+   "id": "leo-sobral",
+   "name": "Léo Sobral",
+   "role": "Back-end sênior",
+   "company": "CRMBonus",
+   "img": "/speakers/leo-sobral.jpg",
+   "sessions": []
+  },
+  {
+   "id": "marcela-godoy",
+   "name": "Marcela Godoy",
+   "role": "Tech Manager",
+   "company": "PicPay",
+   "img": "/speakers/marcela-godoy.jpg",
+   "sessions": [
+    "produtividade-com-ia-como-medir",
+    "como-estruturar-uma-organizacao-de-dados-e-ia"
+   ]
+  },
+  {
+   "id": "marcelio-leal",
+   "name": "Marcelio Leal",
+   "role": "Engineering",
+   "company": "Google",
+   "img": "/speakers/marcelio-leal.jpg",
+   "sessions": [
+    "de-founder-a-funcionario-e-as-vezes-de-volta",
+    "os-novos-sinais-que-importam-num-candidato"
+   ]
+  },
+  {
+   "id": "mario-souto",
+   "name": "Mario Souto",
+   "role": "DevSoutinho & Staff Engineer",
+   "company": "Nubank",
+   "img": "/speakers/mario-souto.jpg",
+   "sessions": [
+    "o-dev-que-pensa-como-produto"
+   ]
+  },
+  {
+   "id": "paula-moura",
+   "name": "Paula Moura",
+   "role": "Líder Técnica",
+   "company": "Banco do Brasil",
+   "img": "/speakers/paula-moura.jpg",
+   "sessions": [
+    "construir-reputacao-tecnica-sem-virar-influencer"
+   ]
+  },
+  {
+   "id": "rafael-dias",
+   "name": "Rafael Dias",
+   "role": "Principal AI Engineer",
+   "company": "Oracle",
+   "img": "/speakers/rafael-dias.jpg",
+   "sessions": [
+    "ai-engineer"
+   ]
+  },
+  {
+   "id": "rafael-dohms",
+   "name": "Rafael Dohms",
+   "role": "Distinguished Engineer",
+   "company": "SurveyMonkey",
+   "img": "/speakers/rafael-dohms.jpg",
+   "sessions": [
+    "o-dia-a-dia-de-um-principal-engineer",
+    "construir-reputacao-tecnica-sem-virar-influencer"
+   ]
+  },
+  {
+   "id": "rafael-ponte",
+   "name": "Rafael Ponte",
+   "role": "Senior Staff Software Engineer",
+   "company": "Zup",
+   "img": "/speakers/rafael-ponte.jpg",
+   "sessions": [
+    "quando-reescrever-quando-refatorar-quando-deixar-quieto"
+   ]
+  },
+  {
+   "id": "raphael-albino",
+   "name": "Raphael Albino",
+   "role": "Consultor",
+   "company": "",
+   "img": "/speakers/raphael-albino.jpg",
+   "sessions": [
+    "o-que-ainda-faz-uma-pessoa-desenvolvedora-ser-boa"
+   ]
+  },
+  {
+   "id": "raphael-pizzo",
+   "name": "Raphael Pizzo",
+   "role": "Líder Técnico",
+   "company": "Locaweb",
+   "img": "/speakers/raphael-pizzo.jpg",
+   "sessions": [
+    "ia-dentro-de-casa-guia-pratico-de-custos-arquitetura-e-produ"
+   ]
+  },
+  {
+   "id": "rodrigo-branas",
+   "name": "Rodrigo Branas",
+   "role": "branas.io",
+   "company": "",
+   "img": "/speakers/rodrigo-branas.jpg",
+   "sessions": [
+    "arquitetura-na-era-da-ia",
+    "second-brain-sera-que-a-inteligencia-artificial-geral-agi-ja"
+   ]
+  },
+  {
+   "id": "rodrigo-miguel",
+   "name": "Rodrigo Miguel",
+   "role": "VP de Engenharia",
+   "company": "Asaas",
+   "img": "/speakers/rodrigo-miguel.jpg",
+   "sessions": [
+    "metrica-ou-vigilancia-o-limite-da-observabilidade-sobre-pess"
+   ]
+  },
+  {
+   "id": "rosicleia-frasson",
+   "name": "Rosicléia Frasson",
+   "role": "Staff Software Engineer",
+   "company": "",
+   "img": "/speakers/rosicleia-frasson.jpg",
+   "sessions": [
+    "lideranca-sem-cracha-de-gestor-o-impacto-estrategico-do-staf"
+   ]
+  },
+  {
+   "id": "sseraphini",
+   "name": "sseraphini",
+   "role": "CTO",
+   "company": "Woovi",
+   "img": "/speakers/sseraphini.jpg",
+   "sessions": [
+    "build-vs-buy-vs-wrap-an-llm"
+   ]
+  },
+  {
+   "id": "thuran",
+   "name": "Thuran",
+   "role": "Coordenador de engenharia",
+   "company": "Asaas",
+   "img": "/speakers/thuran.jpg",
+   "sessions": [
+    "de-founder-a-funcionario-e-as-vezes-de-volta"
+   ]
+  },
+  {
+   "id": "waldemar-neto",
+   "name": "Waldemar Neto",
+   "role": "Co-Founder",
+   "company": "TechLeads.club",
+   "img": "/speakers/waldemar-neto.jpg",
+   "sessions": [
+    "o-futuro-das-ides",
+    "ask-me-anything-com-waldemar-neto",
+    "como-manter-qualidade-na-era-da-ia"
+   ]
+  },
+  {
+   "id": "wheslley-rimar-bezerra",
+   "name": "Wheslley Rimar Bezerra",
+   "role": "Software Project Leader",
+   "company": "Mercado Livre",
+   "img": "/speakers/wheslley-rimar-bezerra.jpg",
+   "sessions": [
+    "modelando-o-pix"
+   ]
+  },
+  {
+   "id": "zarathon-zara-viana",
+   "name": "Zarathon \"Zara\" Viana",
+   "role": "Sr Head of Engineering",
+   "company": "",
+   "img": "/speakers/zarathon-zara-viana.jpg",
+   "sessions": [
+    "proximos-anos-do-mercado-de-tech",
+    "quando-o-playbook-antigo-para-de-funcionar"
+   ]
+  }
+ ],
+ "sessions": [
+  {
+   "id": "abertura",
+   "type": "Abertura",
+   "room": "Auditório",
+   "title": "Abertura",
+   "start": "09:00",
+   "end": "09:30",
+   "speakers": [],
+   "description": "Abertura do evento e breve apresentação de como ele irá funcionar."
+  },
+  {
+   "id": "o-que-ainda-faz-uma-pessoa-desenvolvedora-ser-boa",
+   "type": "Palestra",
+   "room": "Auditório",
+   "title": "O que ainda faz uma pessoa desenvolvedora ser boa?",
+   "start": "09:30",
+   "end": "10:20",
+   "speakers": [
+    {
+     "id": "raphael-albino",
+     "name": "Raphael Albino"
+    }
+   ],
+   "description": "Nas últimas três décadas, a indústria de software mudou várias vezes a forma como entende o trabalho de desenvolvimento. \n\nPrimeiro, valorizamos a capacidade de fazer sistemas existirem. Depois, com a consolidação de design, produto, engenharia e gestão como disciplinas mais especializadas, ampliamos nossa sofisticação, mas também fragmentamos a visão do trabalho. Agora, com IA generativa, automação e novas formas de produzir software, a pergunta fica mais difícil: o que ainda faz uma pessoa desenvolvedora ser boa?\n\nNesta conversa, vou propor uma reflexão sobre a evolução da nossa indústria, os limites da régua tradicional, baseada apenas na entrega de código, e os riscos de formar profissionais sem fundamentos. A talk discute por que o próximo ciclo exigirá menos idolatria por ferramentas e mais julgamento técnico, pensamento sistêmico, leitura de produto, comunicação e responsabilidade pelas consequências. \n\nA provocação central é simples: se escrever código fica cada vez mais fácil, compreender o que vale a pena construir fica cada vez mais importante."
+  },
+  {
+   "id": "arquitetura-na-era-da-ia",
+   "type": "Roundtable",
+   "room": "Arquibancada",
+   "title": "Arquitetura na era da IA",
+   "start": "09:30",
+   "end": "10:20",
+   "speakers": [
+    {
+     "id": "elemar-junior",
+     "name": "Elemar Junior"
+    },
+    {
+     "id": "rodrigo-branas",
+     "name": "Rodrigo Branas"
+    }
+   ],
+   "description": "A IA já escreve código, configura serviços e propõe soluções arquiteturais em poucos prompts. Nesse cenário, o papel de quem projeta sistemas está mudando. O que ainda exige experiência, contexto e julgamento técnico quando boa parte da implementação pode ser delegada à IA? Um painel sobre decisões, trade-offs e os novos limites da arquitetura de software."
+  },
+  {
+   "id": "lideranca-sem-cracha-de-gestor-o-impacto-estrategico-do-staf",
+   "type": "Mentoria",
+   "room": "Capela",
+   "title": "Liderança sem crachá de gestor: o impacto estratégico do Staff Engineer",
+   "start": "09:30",
+   "end": "10:50",
+   "speakers": [
+    {
+     "id": "rosicleia-frasson",
+     "name": "Rosicléia Frasson"
+    },
+    {
+     "id": "elaine-watanabe",
+     "name": "Elaine Watanabe"
+    }
+   ],
+   "description": "Um espaço pra trocar experiências, discutir desafios reais e buscar caminhos possíveis pra questões de carreira e tecnologia. Em encontros mais próximos e personalizados, participantes podem levar suas dúvidas, contextos e problemas pra conversar diretamente com profissionais experientes e sair com novas perspectivas e ideias pra colocar em prática."
+  },
+  {
+   "id": "o-futuro-das-ides",
+   "type": "Fishbowl",
+   "room": "Lab",
+   "title": "O futuro das IDEs",
+   "start": "09:30",
+   "end": "10:20",
+   "speakers": [
+    {
+     "id": "joas-garcia",
+     "name": "Joás Garcia"
+    },
+    {
+     "id": "waldemar-neto",
+     "name": "Waldemar Neto"
+    }
+   ],
+   "description": "Se a IA já escreve código, o que esperamos de uma IDE no futuro? Uma conversa sobre como os ambientes de desenvolvimento estão mudando e o que pode vir depois do editor que conhecemos hoje."
+  },
+  {
+   "id": "proximos-anos-do-mercado-de-tech",
+   "type": "Fishbowl",
+   "room": "Studio",
+   "title": "Próximos anos do mercado de tech",
+   "start": "09:30",
+   "end": "10:20",
+   "speakers": [
+    {
+     "id": "gleica",
+     "name": "Gleica"
+    },
+    {
+     "id": "zarathon-zara-viana",
+     "name": "Zarathon \"Zara\" Viana"
+    }
+   ],
+   "description": "O mercado de tecnologia está mudando nas ferramentas que usamos, nos perfis que as empresas procuram e na forma como o trabalho é organizado. O que tende a ganhar espaço nos próximos anos? Quais habilidades vão se tornar mais importantes, quais funções podem desaparecer ou se transformar e como se preparar pra um mercado que ainda está sendo desenhado?"
+  },
+  {
+   "id": "o-que-separa-o-senior-excelente-do-principal-e-nao-e-tecnica",
+   "type": "Palestra",
+   "room": "Auditório",
+   "title": "O que separa o Sênior excelente do Principal (e não é técnica)",
+   "start": "10:30",
+   "end": "11:20",
+   "speakers": [
+    {
+     "id": "alex-rios",
+     "name": "Alex Rios"
+    }
+   ],
+   "description": ""
+  },
+  {
+   "id": "a-reinvencao-da-engenharia-de-software-na-era-da-ia-generati",
+   "type": "Mentoria",
+   "room": "Arquibancada",
+   "title": "A reinvenção da engenharia de software na era da IA generativa",
+   "start": "10:30",
+   "end": "11:20",
+   "speakers": [
+    {
+     "id": "douglas-hermann",
+     "name": "Douglas Hermann"
+    }
+   ],
+   "description": "Copilotos ajudam na escrita de código, agentes auxiliam (e às vezes tomam) decisões e o ciclo de feedback fica cada vez mais curto: o dia a dia da engenharia de software já não é o mesmo.\n\nNesta mentoria, vou contar como isso mudou, com base na minha experiência prática construindo uma plataforma de agentes de IA em produção: a forma como planejamos, construímos e operamos software se transformou."
+  },
+  {
+   "id": "modelando-o-pix",
+   "type": "Architectural Kata",
+   "room": "Lab",
+   "title": "Modelando o Pix",
+   "start": "10:30",
+   "end": "12:40",
+   "speakers": [
+    {
+     "id": "dennis-rojas",
+     "name": "Dennis Rojas"
+    },
+    {
+     "id": "wheslley-rimar-bezerra",
+     "name": "Wheslley Rimar Bezerra"
+    }
+   ],
+   "description": "Vamos modelar uma solução para um problema de negócio real. O foco será em requisitos, escalabilidade, resiliência, trade-offs arquiteturais e comunicação de decisões técnicas."
+  },
+  {
+   "id": "de-founder-a-funcionario-e-as-vezes-de-volta",
+   "type": "Fishbowl",
+   "room": "Studio",
+   "title": "De founder a funcionário (e às vezes de volta)",
+   "start": "10:30",
+   "end": "11:20",
+   "speakers": [
+    {
+     "id": "thuran",
+     "name": "Thuran"
+    },
+    {
+     "id": "marcelio-leal",
+     "name": "Marcelio Leal"
+    }
+   ],
+   "description": "A experiência de construir uma empresa passa a influenciar a maneira de tomar decisões, lidar com problemas, trabalhar em equipe e entender o próprio papel dentro de uma organização. O que muda quando você troca de lado e o que continua exatamente igual?"
+  },
+  {
+   "id": "mantendo-influencia-tecnica-quando-tudo-muda-a-cada-18-meses",
+   "type": "Mentoria",
+   "room": "Capela",
+   "title": "Mantendo influência técnica quando tudo muda a cada 18 meses",
+   "start": "11:00",
+   "end": "12:20",
+   "speakers": [
+    {
+     "id": "elemar-junior",
+     "name": "Elemar Junior"
+    }
+   ],
+   "description": "Um espaço pra trocar experiências, discutir desafios reais e buscar caminhos possíveis pra questões de carreira e tecnologia. Em encontros mais próximos e personalizados, participantes podem levar suas dúvidas, contextos e problemas pra conversar diretamente com profissionais experientes e sair com novas perspectivas e ideias pra colocar em prática."
+  },
+  {
+   "id": "ask-me-anything-com-waldemar-neto",
+   "type": "AMA",
+   "room": "Auditório",
+   "title": "Ask Me Anything com Waldemar Neto",
+   "start": "11:30",
+   "end": "12:40",
+   "speakers": [
+    {
+     "id": "waldemar-neto",
+     "name": "Waldemar Neto"
+    }
+   ],
+   "description": "Um espaço aberto pra perguntar o que quiser. Aqui, quem conduz a conversa são as perguntas da platéia: dúvidas, curiosidades, experiências e até aquelas perguntas que você sempre quis fazer, mas nunca teve a oportunidade. A pessoa convidada responde ao vivo, sem roteiro fechado."
+  },
+  {
+   "id": "metrica-ou-vigilancia-o-limite-da-observabilidade-sobre-pess",
+   "type": "Fishbowl",
+   "room": "Arquibancada",
+   "title": "Métrica ou vigilância? O limite da observabilidade sobre pessoas",
+   "start": "11:30",
+   "end": "12:20",
+   "speakers": [
+    {
+     "id": "rodrigo-miguel",
+     "name": "Rodrigo Miguel"
+    }
+   ],
+   "description": "Neste fishbowl, discutimos onde termina a métrica que ajuda o time a melhorar e onde começa a vigilância que corrói a confiança. Com ferramentas que capturam commits, PRs, tempo de resposta e, cada vez mais, o uso de IA, fica fácil medir tudo e difícil decidir o que deveria ser medido. A conversa passa por perguntas práticas: dados de fluxo e de sistema servem para avaliar pessoas? Quem tem acesso a quê, e com qual transparência? Como evitar que o indicador vire meta e distorça o comportamento?"
+  },
+  {
+   "id": "produtividade-com-ia-como-medir",
+   "type": "Fishbowl",
+   "room": "Studio",
+   "title": "Produtividade com IA: como medir?",
+   "start": "11:30",
+   "end": "12:20",
+   "speakers": [
+    {
+     "id": "marcela-godoy",
+     "name": "Marcela Godoy"
+    },
+    {
+     "id": "juliano-martins",
+     "name": "Juliano Martins"
+    }
+   ],
+   "description": "A IA mudou radicalmente a velocidade de produção de software, mas as métricas usadas para avaliar produtividade continuam praticamente as mesmas. Mais código, mais PRs ou mais tickets fechados não significam necessariamente mais valor entregue. Com novas ferramentas e formas de trabalhar, é preciso repensar o que estamos chamando de produtividade e quais sinais realmente mostram o impacto da IA no trabalho de engenharia."
+  },
+  {
+   "id": "almoco",
+   "type": "Intervalo",
+   "room": "Todos",
+   "title": "Almoço",
+   "start": "12:30",
+   "end": "14:30",
+   "speakers": [],
+   "description": "Almoço incluso no ingresso. Hora de continuar a conversa que começou na sala."
+  },
+  {
+   "id": "licoes-aprendidas-na-arquitetura-e-engenharia-de-software-do",
+   "type": "Lições aprendidas",
+   "room": "Auditório",
+   "title": "Lições aprendidas na arquitetura e engenharia de software do Asaas",
+   "start": "14:30",
+   "end": "15:20",
+   "speakers": [
+    {
+     "id": "joas-garcia",
+     "name": "Joás Garcia"
+    }
+   ],
+   "description": "Nesse papo vamos compartilhar aprendizados reais de quem lidera arquitetura e plataforma em um ambiente de alta escala e forte exigência regulatória. A conversa traz decisões técnicas, trade-offs e erros que moldaram a evolução da arquitetura do Asaas."
+  },
+  {
+   "id": "ia-dentro-de-casa-guia-pratico-de-custos-arquitetura-e-produ",
+   "type": "Mentoria",
+   "room": "Arquibancada",
+   "title": "IA dentro de casa: Guia prático de custos, arquitetura e produção",
+   "start": "14:30",
+   "end": "15:20",
+   "speakers": [
+    {
+     "id": "raphael-pizzo",
+     "name": "Raphael Pizzo"
+    }
+   ],
+   "description": "Mentoria prática para quem está avaliando ou já começou a rodar modelos de IA em infraestrutura própria e precisa tomar decisões de arquitetura com números na mão. Traga seu caso."
+  },
+  {
+   "id": "o-dia-a-dia-de-um-principal-engineer",
+   "type": "Mentoria",
+   "room": "Capela",
+   "title": "O dia a dia de um Principal Engineer",
+   "start": "14:30",
+   "end": "16:20",
+   "speakers": [
+    {
+     "id": "rafael-dohms",
+     "name": "Rafael Dohms"
+    },
+    {
+     "id": "damiana-costa",
+     "name": "Damiana Costa"
+    }
+   ],
+   "description": "Um espaço pra trocar experiências, discutir desafios reais e buscar caminhos possíveis pra questões de carreira e tecnologia. Em encontros mais próximos e personalizados, participantes podem levar suas dúvidas, contextos e problemas pra conversar diretamente com profissionais experientes e sair com novas perspectivas e ideias pra colocar em prática."
+  },
+  {
+   "id": "second-brain-sera-que-a-inteligencia-artificial-geral-agi-ja",
+   "type": "Workshop",
+   "room": "Lab",
+   "title": "Second-brain: Será que a Inteligência Artificial Geral (AGI) já é possível de ser implantada na sua empresa?",
+   "start": "14:30",
+   "end": "16:20",
+   "speakers": [
+    {
+     "id": "rodrigo-branas",
+     "name": "Rodrigo Branas"
+    }
+   ],
+   "description": "Vamos sair do hype e traduzir “AGI na empresa” em arquitetura real: memória semântica, RAG, base de conhecimento, workflows e contexto compartilhado para times, produtos e operação."
+  },
+  {
+   "id": "quando-reescrever-quando-refatorar-quando-deixar-quieto",
+   "type": "Fishbowl",
+   "room": "Studio",
+   "title": "Quando reescrever, quando refatorar, quando deixar quieto",
+   "start": "14:30",
+   "end": "15:20",
+   "speakers": [
+    {
+     "id": "rafael-ponte",
+     "name": "Rafael Ponte"
+    },
+    {
+     "id": "alex-rios",
+     "name": "Alex Rios"
+    }
+   ],
+   "description": "Nem todo código ruim precisa ser refeito e nem todo código que funciona deveria continuar como está. Entre reescrever do zero, refatorar aos poucos ou simplesmente aceitar as imperfeições, existem custos, riscos e contextos que precisam entrar na decisão. Um espaço pra discutir como fazer essas escolhas sem cair nem no apego ao legado, nem na vontade de começar tudo de novo."
+  },
+  {
+   "id": "os-novos-sinais-que-importam-num-candidato",
+   "type": "Roundtable",
+   "room": "Auditório",
+   "title": "Os novos sinais que importam num candidato",
+   "start": "15:30",
+   "end": "16:20",
+   "speakers": [
+    {
+     "id": "marcelio-leal",
+     "name": "Marcelio Leal"
+    },
+    {
+     "id": "henrique-souza",
+     "name": "Henrique Souza"
+    }
+   ],
+   "description": "Com IA mudando a forma de trabalhar, produzir e até avaliar código, o currículo tradicional já não conta toda a história. O que passa a pesar na hora de contratar? Experiência, capacidade de aprender, repertório, pensamento crítico, uso de IA, projetos ou algo que ainda não estamos sabendo medir? Um painel sobre os sinais que estão ganhando importância nas entrevistas de trabalho em tech."
+  },
+  {
+   "id": "quem-revisa-o-codigo-que-a-ia-escreve-code-review-na-era-do-",
+   "type": "Roundtable",
+   "room": "Arquibancada",
+   "title": "Quem revisa o código que a IA escreve? Code review na era do AI Slop",
+   "start": "15:30",
+   "end": "16:20",
+   "speakers": [
+    {
+     "id": "alestan",
+     "name": "Alestan"
+    }
+   ],
+   "description": "A inteligência artificial tornou a produção de código mais rápida, mas não necessariamente melhor. À medida que copilotos e agentes multiplicam entregas e pull requests, o gargalo deixa de ser escrever e passa a ser compreender, validar e assumir responsabilidade pelo que foi gerado.\n\nO resultado pode ser mais retrabalho, decisões arquiteturais frágeis e AI Slop: código genérico que parece pronto, mas não sustenta produtos reais. Nesta mesa-redonda, vamos discutir como o code review precisa evoluir, quando confiar na automação e por que o papel humano deixa de ser apenas o de autor para se tornar o de juiz. Afinal, se a IA escreve e também revisa, quem vigia o vigilante?"
+  },
+  {
+   "id": "build-vs-buy-vs-wrap-an-llm",
+   "type": "Fishbowl",
+   "room": "Studio",
+   "title": "Build vs. buy vs. wrap-an-LLM",
+   "start": "15:30",
+   "end": "16:20",
+   "speakers": [
+    {
+     "id": "juliano-martins",
+     "name": "Juliano Martins"
+    },
+    {
+     "id": "sseraphini",
+     "name": "sseraphini"
+    }
+   ],
+   "description": "O que antes era uma escolha entre desenvolver internamente ou contratar uma ferramenta agora também envolve APIs, modelos, wrappers e serviços de IA. Mais do que escolher uma tecnologia, trata-se de entender onde vale investir engenharia própria e onde faz mais sentido aproveitar o que já existe."
+  },
+  {
+   "id": "coffee-break",
+   "type": "Intervalo",
+   "room": "Todos",
+   "title": "Coffee break",
+   "start": "16:30",
+   "end": "17:00",
+   "speakers": [],
+   "description": "Coffee incluso. Recarregue e troque ideia com quem estava na sessão ao lado."
+  },
+  {
+   "id": "ask-me-anything-com-felipe-ribeiro",
+   "type": "AMA",
+   "room": "Auditório",
+   "title": "Ask Me Anything com Felipe Ribeiro",
+   "start": "17:00",
+   "end": "17:50",
+   "speakers": [
+    {
+     "id": "felipe-ribeiro",
+     "name": "Felipe Ribeiro"
+    }
+   ],
+   "description": "Um espaço aberto pra perguntar o que quiser. Aqui, quem conduz a conversa são as perguntas da platéia: dúvidas, curiosidades, experiências e até aquelas perguntas que você sempre quis fazer, mas nunca teve a oportunidade. A pessoa convidada responde ao vivo, sem roteiro fechado."
+  },
+  {
+   "id": "ia-no-produto-como-fazer-as-escolhas-certas",
+   "type": "Fishbowl",
+   "room": "Arquibancada",
+   "title": "IA no produto: como fazer as escolhas certas",
+   "start": "17:00",
+   "end": "17:50",
+   "speakers": [
+    {
+     "id": "augusto-souza",
+     "name": "Augusto Souza"
+    },
+    {
+     "id": "leonardo-accorsi",
+     "name": "Leonardo Accorsi"
+    }
+   ],
+   "description": "Plugar inteligência artificial no produto virou prioridade em quase todo time de tecnologia, mas decidir onde e como aplicar IA de forma realmente útil é um desafio importante. Entre a ansiedade de lançar rápido e a necessidade de entregar valor real, como fazer escolhas arquiteturais e de produto conscientes? Um espaço pra trocar aprendizados práticos sobre o que funciona, o que custa caro demais e como decidir onde a IA realmente faz a diferença."
+  },
+  {
+   "id": "quando-o-playbook-antigo-para-de-funcionar",
+   "type": "Fishbowl",
+   "room": "Capela",
+   "title": "Quando o playbook antigo para de funcionar",
+   "start": "17:00",
+   "end": "17:50",
+   "speakers": [
+    {
+     "id": "zarathon-zara-viana",
+     "name": "Zarathon \"Zara\" Viana"
+    },
+    {
+     "id": "eduardo-matos",
+     "name": "Eduardo Matos"
+    }
+   ],
+   "description": "Toda carreira e toda empresa acumulam formas de fazer as coisas que funcionaram por muito tempo. Mas o mercado muda, a tecnologia muda, os times crescem e, de repente, aquilo que antes dava certo começa a gerar mais problemas do que soluções. Como perceber que é hora de abandonar o playbook conhecido e construir novas formas de trabalhar, decidir e crescer?"
+  },
+  {
+   "id": "construir-reputacao-tecnica-sem-virar-influencer",
+   "type": "Fishbowl",
+   "room": "Lab",
+   "title": "Construir reputação técnica sem virar influencer",
+   "start": "17:00",
+   "end": "17:50",
+   "speakers": [
+    {
+     "id": "rafael-dohms",
+     "name": "Rafael Dohms"
+    },
+    {
+     "id": "elaine-watanabe",
+     "name": "Elaine Watanabe"
+    },
+    {
+     "id": "paula-moura",
+     "name": "Paula Moura"
+    }
+   ],
+   "description": "Em um mercado cada vez mais público, como construir reputação e mostrar o que você sabe sem precisar virar influencer? Um fishbowl para discutir visibilidade, autoridade técnica, compartilhamento de conhecimento e os limites entre construir reputação e construir uma audiência."
+  },
+  {
+   "id": "como-estruturar-uma-organizacao-de-dados-e-ia",
+   "type": "Fishbowl",
+   "room": "Studio",
+   "title": "Como estruturar uma organização de dados e IA",
+   "start": "17:00",
+   "end": "17:50",
+   "speakers": [
+    {
+     "id": "marcela-godoy",
+     "name": "Marcela Godoy"
+    },
+    {
+     "id": "henrique-souza",
+     "name": "Henrique Souza"
+    }
+   ],
+   "description": "Não basta ter bons dados ou adotar as ferramentas certas para fazer IA funcionar dentro de uma empresa. É preciso definir responsabilidades, processos, prioridades e uma estrutura que conecte dados, tecnologia e negócio. Um fishbowl para discutir como organizar times e competências, decidir o que centralizar ou distribuir e criar uma estrutura capaz de sustentar iniciativas de dados e IA na prática."
+  },
+  {
+   "id": "licoes-aprendidas-construindo-a-resend",
+   "type": "Lições aprendidas",
+   "room": "Auditório",
+   "title": "Lições aprendidas construindo a Resend",
+   "start": "18:00",
+   "end": "18:50",
+   "speakers": [
+    {
+     "id": "bu-kinoshita",
+     "name": "Bu Kinoshita"
+    }
+   ],
+   "description": "Como é construir uma empresa do zero e o que ninguém conta sobre fazer ela crescer? Neste formato, a conversa parte das experiências reais de quem está no palco: os desafios de criar o negócio, contratar as primeiras pessoas, tomar decisões difíceis, lidar com erros e aprender a escalar. Um espaço pra perguntas e respostas sobre os bastidores da construção da empresa, os problemas que surgiram pelo caminho e, principalmente, o que aprenderam nessa trajetória."
+  },
+  {
+   "id": "como-manter-qualidade-na-era-da-ia",
+   "type": "Fishbowl",
+   "room": "Arquibancada",
+   "title": "Como manter qualidade na era da IA",
+   "start": "18:00",
+   "end": "18:50",
+   "speakers": [
+    {
+     "id": "erick-wendel",
+     "name": "Erick Wendel"
+    },
+    {
+     "id": "waldemar-neto",
+     "name": "Waldemar Neto"
+    },
+    {
+     "id": "bruna-emerich",
+     "name": "Bruna Emerich"
+    }
+   ],
+   "description": "A IA tornou mais fácil e rápido escrever código, mas velocidade não garante qualidade. Como revisar o que é gerado, identificar problemas que passam despercebidos e manter bons padrões quando o volume de código aumenta? Um fishbowl para discutir práticas, critérios e responsabilidades que ajudam a preservar a qualidade do software em um cenário cada vez mais acelerado pela IA."
+  },
+  {
+   "id": "ai-engineer",
+   "type": "Mentoria",
+   "room": "Capela",
+   "title": "AI Engineer",
+   "start": "18:00",
+   "end": "18:50",
+   "speakers": [
+    {
+     "id": "rafael-dias",
+     "name": "Rafael Dias"
+    }
+   ],
+   "description": "Um espaço pra trocar experiências, discutir desafios reais e buscar caminhos possíveis pra questões de carreira e tecnologia. Em encontros mais próximos e personalizados, participantes podem levar suas dúvidas, contextos e problemas pra conversar diretamente com profissionais experientes e sair com novas perspectivas e ideias pra colocar em prática."
+  },
+  {
+   "id": "o-dev-que-pensa-como-produto",
+   "type": "Fishbowl",
+   "room": "Lab",
+   "title": "O dev que pensa como produto",
+   "start": "18:00",
+   "end": "18:50",
+   "speakers": [
+    {
+     "id": "danilo-fuchs",
+     "name": "Danilo Fuchs"
+    },
+    {
+     "id": "mario-souto",
+     "name": "Mario Souto"
+    }
+   ],
+   "description": "O Product Engineer ganhou espaço ao combinar engenharia com uma visão mais ampla sobre o produto e o negócio. Mas o que muda, na prática, quando quem desenvolve também precisa entender o problema, priorizar, tomar decisões e pensar no impacto do que está construindo? Um fishbowl para discutir esse perfil, o que ele exige de quem desenvolve e se esse pode ser um dos caminhos para a carreira de engenharia nos próximos anos."
+  },
+  {
+   "id": "happy-hour",
+   "type": "Intervalo",
+   "room": "Todos",
+   "title": "Happy hour",
+   "start": "19:00",
+   "end": "20:00",
+   "speakers": [],
+   "description": "Networking de verdade, sem crachá de cargo. Incluso no ingresso."
+  }
+ ]
+}

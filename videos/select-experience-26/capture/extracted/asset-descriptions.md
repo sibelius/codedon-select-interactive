@@ -1,0 +1,62 @@
+# Asset Descriptions
+
+⚠️  No vision credentials — descriptions below are catalog-derived (alt text, headings, section context, filename) instead of Vision-generated. To get richer Vision descriptions on the next capture, set GEMINI_API_KEY (or GOOGLE_API_KEY), or HYPERFRAMES_VERTEX_PROJECT_ID plus HYPERFRAMES_VERTEX_SERVICE_ACCOUNT for Vertex service-account auth, and re-run.
+
+The `logo-<hash>.svg` filename prefix is a structural hint (DOM said this SVG was inside a `<header>`, home-link `<a>`, or had an aria-label matching the page brand). To pick the actual brand logo without Vision, open the `logo-*` candidates in a previewer or rasterize them with `sharp` before referencing — composing a fake logo ships off-brand in the final video.
+
+- alestan.jpg — 53KB, "Alestan", section: "KeepGettingBetter_", above fold
+- alex-rios.jpg — 47KB, "Alex Rios", section: "KeepGettingBetter_", above fold
+- ana-neri.jpg — 50KB, "Ana Neri", section: "KeepGettingBetter_", above fold
+- andr-david.jpg — 35KB, andr david
+- augusto-souza.jpg — 54KB, "Augusto Souza", section: "KeepGettingBetter_", above fold
+- bruna-emerich.jpg — 36KB, "Bruna Emerich", section: "KeepGettingBetter_", above fold
+- bu-kinoshita.jpg — 48KB, "Bu Kinoshita", section: "KeepGettingBetter_", above fold
+- damiana-costa.jpg — 53KB, "Damiana Costa", section: "KeepGettingBetter_", above fold
+- danilo-fuchs.jpg — 50KB, "Danilo Fuchs", section: "KeepGettingBetter_", above fold
+- dennis-rojas.jpg — 53KB, "Dennis Rojas", section: "KeepGettingBetter_", above fold
+- douglas-hermann.jpg — 51KB, "Douglas Hermann", section: "KeepGettingBetter_", above fold
+- eduardo-matos.jpg — 43KB, "Eduardo Matos", section: "KeepGettingBetter_", above fold
+- elaine-watanabe.jpg — 47KB, "Elaine Watanabe", section: "KeepGettingBetter_", above fold
+- elemar-junior.jpg — 54KB, "Elemar Junior", section: "KeepGettingBetter_", above fold
+- erick-wendel.jpg — 56KB, "Erick Wendel", section: "KeepGettingBetter_", above fold
+- favicon.svg — 0KB, favicon
+- felipe-ribeiro.jpg — 50KB, "Felipe Ribeiro", section: "KeepGettingBetter_", above fold
+- gleica.jpg — 52KB, "Gleica", section: "KeepGettingBetter_", above fold
+- henrique-souza.jpg — 48KB, "Henrique Souza", section: "KeepGettingBetter_", above fold
+- icon-icon-any.svg — 0KB, icon icon any
+- jessica-felix.jpg — 54KB, "Jessica Felix", section: "KeepGettingBetter_", above fold
+- jos-garcia.jpg — 43KB, jos garcia
+- juliano-martins.jpg — 48KB, "Juliano Martins", section: "KeepGettingBetter_", above fold
+- leonardo-accorsi.jpg — 49KB, "Leonardo Accorsi", section: "KeepGettingBetter_", above fold
+- lo-sobral.jpg — 46KB, lo sobral
+- marcela-godoy.jpg — 55KB, "Marcela Godoy", section: "KeepGettingBetter_", above fold
+- marcelio-leal.jpg — 51KB, "Marcelio Leal", section: "KeepGettingBetter_", above fold
+- mario-souto.jpg — 54KB, "Mario Souto", section: "KeepGettingBetter_", above fold
+- og-image.png — 212KB, og image
+- paula-moura.jpg — 51KB, "Paula Moura", section: "KeepGettingBetter_", above fold
+- rafael-dias.jpg — 54KB, "Rafael Dias", section: "KeepGettingBetter_", above fold
+- rafael-dohms.jpg — 54KB, "Rafael Dohms", section: "KeepGettingBetter_", above fold
+- rafael-ponte.jpg — 53KB, "Rafael Ponte", section: "KeepGettingBetter_", above fold
+- raphael-albino.jpg — 46KB, "Raphael Albino", section: "KeepGettingBetter_", above fold
+- raphael-pizzo.jpg — 43KB, "Raphael Pizzo", section: "KeepGettingBetter_", above fold
+- rodrigo-branas.jpg — 52KB, "Rodrigo Branas", section: "KeepGettingBetter_", above fold
+- rodrigo-miguel.jpg — 49KB, "Rodrigo Miguel", section: "KeepGettingBetter_", above fold
+- rosicleia-stories.jpg — 268KB, "Rosicléia Frasson", section: "Te vejo lá?"
+- rosiclia-frasson.jpg — 55KB, rosiclia frasson
+- sibelius-stories.jpg — 255KB, "sseraphini", section: "Te vejo lá?"
+- sseraphini-cto-woovi.jpg — 495KB, sseraphini cto woovi
+- sseraphini.jpg — 44KB, "sseraphini", section: "KeepGettingBetter_", above fold
+- te-vejo-l.jpg — 492KB, te vejo l
+- thuran-stories.jpg — 255KB, "Thuran", section: "Te vejo lá?"
+- thuran.jpg — 48KB, "Thuran", section: "KeepGettingBetter_", above fold
+- waldemar-neto.jpg — 51KB, "Waldemar Neto", section: "KeepGettingBetter_", above fold
+- wheslley-rimar-bezerra.jpg — 50KB, "Wheslley Rimar Bezerra", section: "KeepGettingBetter_", above fold
+- zarathon-zara-viana.jpg — 50KB, "Zarathon "Zara" Viana", section: "KeepGettingBetter_", above fold
+- fonts/28e60ca39c9ae554-s.0e_5-ojqbtsw9.woff2 — font file
+- fonts/4ba802ed8e67eac5-s.341_rbs6dql3t.woff2 — font file
+- fonts/5c285b27cdda1fe8-s.p.0lsanbtneewqp.woff2 — font file
+- fonts/8d05cfa5faa8406c-s.p.2p-978ij53_v6.woff2 — font file
+- fonts/b8f2b92a9960dd69-s.37aqrzupgb8zi.woff2 — font file
+- fonts/c3cb240f9c892514-s.270md_-rr62el.woff2 — font file
+- fonts/d7a0600e467cf0bd-s.40d3ll7mho212.woff2 — font file
+- fonts/dc0d9adbac686440-s.p.3-4lwpipb4a4k.woff2 — font file
