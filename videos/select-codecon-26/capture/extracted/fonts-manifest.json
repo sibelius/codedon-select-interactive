@@ -1,0 +1,549 @@
+{
+  "files": [
+    {
+      "file": "1PtFg9jZXvmMnkLnuURbaukKZJTyrDV326uH6mSinjBIwc5fIjFAoAQ.woff2",
+      "family": "Stack Sans Headline ExtraLight",
+      "rawFamily": "Stack Sans Headline ExtraLight Medium",
+      "subfamily": "Regular",
+      "postscript": "StackSansHeadlineExtraLight-Medium",
+      "weight": 500,
+      "style": "normal",
+      "variationAxes": [],
+      "identified": true,
+      "isIcon": false
+    },
+    {
+      "file": "1PtFg9jZXvmMnkLnuURbaukKZJTyrDV326uH6mSinjBIwc5fIjFOoAQw3Q.woff2",
+      "family": "Stack Sans Headline ExtraLight",
+      "rawFamily": "Stack Sans Headline ExtraLight Medium",
+      "subfamily": "Regular",
+      "postscript": "StackSansHeadlineExtraLight-Medium",
+      "weight": 500,
+      "style": "normal",
+      "variationAxes": [],
+      "identified": true,
+      "isIcon": false
+    },
+    {
+      "file": "4iCr6K5wfMRRjxp0DA6-2CLnB41HhrUI.woff2",
+      "family": "Fragment Mono",
+      "rawFamily": "Fragment Mono",
+      "subfamily": "Regular",
+      "postscript": "FragmentMono-Regular",
+      "weight": 400,
+      "style": "normal",
+      "variationAxes": [],
+      "identified": true,
+      "isIcon": false
+    },
+    {
+      "file": "4iCr6K5wfMRRjxp0DA6-2CLnB45HhrUI.woff2",
+      "family": "Fragment Mono",
+      "rawFamily": "Fragment Mono",
+      "subfamily": "Regular",
+      "postscript": "FragmentMono-Regular",
+      "weight": 400,
+      "style": "normal",
+      "variationAxes": [],
+      "identified": true,
+      "isIcon": false
+    },
+    {
+      "file": "4iCr6K5wfMRRjxp0DA6-2CLnB4NHhg.woff2",
+      "family": "Fragment Mono",
+      "rawFamily": "Fragment Mono",
+      "subfamily": "Regular",
+      "postscript": "FragmentMono-Regular",
+      "weight": 400,
+      "style": "normal",
+      "variationAxes": [],
+      "identified": true,
+      "isIcon": false
+    },
+    {
+      "file": "TwMY-JcVXlQd3ooGEx9EbUzgioTr5BY5lEpidqlSR8fQuS2QEmbKBw.woff2",
+      "family": "Stack Sans Notch ExtraLight",
+      "rawFamily": "Stack Sans Notch ExtraLight Medium",
+      "subfamily": "Regular",
+      "postscript": "StackSansNotchExtraLight-Medium",
+      "weight": 500,
+      "style": "normal",
+      "variationAxes": [],
+      "identified": true,
+      "isIcon": false
+    },
+    {
+      "file": "TwMY-JcVXlQd3ooGEx9EbUzgioTr5BY5lEpidqlSR8fQuS2eEmY.woff2",
+      "family": "Stack Sans Notch ExtraLight",
+      "rawFamily": "Stack Sans Notch ExtraLight Medium",
+      "subfamily": "Regular",
+      "postscript": "StackSansNotchExtraLight-Medium",
+      "weight": 500,
+      "style": "normal",
+      "variationAxes": [],
+      "identified": true,
+      "isIcon": false
+    },
+    {
+      "file": "V8mDoQDjQSkFtoMM3T6r8E7mPbF4Cw.woff2",
+      "family": "Space Grotesk",
+      "rawFamily": "Space Grotesk Light",
+      "subfamily": "Regular",
+      "postscript": "SpaceGrotesk-Light",
+      "weight": 300,
+      "style": "normal",
+      "variationAxes": [
+        "wght"
+      ],
+      "identified": true,
+      "isIcon": false
+    },
+    {
+      "file": "WBLnrEXccV9VGrOKmGDFUkXNFME.woff2",
+      "family": "Erica One",
+      "rawFamily": "Erica One",
+      "subfamily": "Regular",
+      "postscript": "EricaOne-Regular",
+      "weight": 400,
+      "style": "normal",
+      "variationAxes": [],
+      "identified": true,
+      "isIcon": false
+    },
+    {
+      "file": "WBLnrEXccV9VGrOKmGDFXEXN.woff2",
+      "family": "Erica One",
+      "rawFamily": "Erica One",
+      "subfamily": "Regular",
+      "postscript": "EricaOne-Regular",
+      "weight": 400,
+      "style": "normal",
+      "variationAxes": [],
+      "identified": true,
+      "isIcon": false
+    },
+    {
+      "file": "aFTU7PB1QTsUX8KYthSQBLyM.woff2",
+      "family": "DM Mono",
+      "rawFamily": "DM Mono",
+      "subfamily": "Regular",
+      "postscript": "DMMono-Regular",
+      "weight": 400,
+      "style": "normal",
+      "variationAxes": [],
+      "identified": true,
+      "isIcon": false
+    },
+    {
+      "file": "aFTU7PB1QTsUX8KYthqQBA.woff2",
+      "family": "DM Mono",
+      "rawFamily": "DM Mono",
+      "subfamily": "Regular",
+      "postscript": "DMMono-Regular",
+      "weight": 400,
+      "style": "normal",
+      "variationAxes": [],
+      "identified": true,
+      "isIcon": false
+    },
+    {
+      "file": "fC1_PZJEZG-e9gHhdI4-NBbfd2ys3SjJCx1cw9DuHpM.woff2",
+      "family": "Big Shoulders Display",
+      "rawFamily": "Big Shoulders Display Thin",
+      "subfamily": "Regular",
+      "postscript": "BigShouldersDisplay-Thin",
+      "weight": 100,
+      "style": "normal",
+      "variationAxes": [
+        "wght"
+      ],
+      "identified": true,
+      "isIcon": false
+    },
+    {
+      "file": "fC1_PZJEZG-e9gHhdI4-NBbfd2ys3SjJCx1cwtDuHpM.woff2",
+      "family": "Big Shoulders Display",
+      "rawFamily": "Big Shoulders Display Thin",
+      "subfamily": "Regular",
+      "postscript": "BigShouldersDisplay-Thin",
+      "weight": 100,
+      "style": "normal",
+      "variationAxes": [
+        "wght"
+      ],
+      "identified": true,
+      "isIcon": false
+    },
+    {
+      "file": "fC1_PZJEZG-e9gHhdI4-NBbfd2ys3SjJCx1czNDu.woff2",
+      "family": "Big Shoulders Display",
+      "rawFamily": "Big Shoulders Display Thin",
+      "subfamily": "Regular",
+      "postscript": "BigShouldersDisplay-Thin",
+      "weight": 100,
+      "style": "normal",
+      "variationAxes": [
+        "wght"
+      ],
+      "identified": true,
+      "isIcon": false
+    },
+    {
+      "file": "gyByhwUxId8gMEwRGFWfOw.woff2",
+      "family": "Geist",
+      "rawFamily": "Geist",
+      "subfamily": "Regular",
+      "postscript": "Geist-Regular",
+      "weight": 400,
+      "style": "normal",
+      "variationAxes": [
+        "wght"
+      ],
+      "identified": true,
+      "isIcon": false
+    },
+    {
+      "file": "gyByhwUxId8gMEwSGFWfOw.woff2",
+      "family": "Geist",
+      "rawFamily": "Geist",
+      "subfamily": "Regular",
+      "postscript": "Geist-Regular",
+      "weight": 400,
+      "style": "normal",
+      "variationAxes": [
+        "wght"
+      ],
+      "identified": true,
+      "isIcon": false
+    },
+    {
+      "file": "gyByhwUxId8gMEwTGFWfOw.woff2",
+      "family": "Geist",
+      "rawFamily": "Geist",
+      "subfamily": "Regular",
+      "postscript": "Geist-Regular",
+      "weight": 400,
+      "style": "normal",
+      "variationAxes": [
+        "wght"
+      ],
+      "identified": true,
+      "isIcon": false
+    },
+    {
+      "file": "gyByhwUxId8gMEwYGFWfOw.woff2",
+      "family": "Geist",
+      "rawFamily": "Geist",
+      "subfamily": "Regular",
+      "postscript": "Geist-Regular",
+      "weight": 400,
+      "style": "normal",
+      "variationAxes": [
+        "wght"
+      ],
+      "identified": true,
+      "isIcon": false
+    },
+    {
+      "file": "gyByhwUxId8gMEwcGFU.woff2",
+      "family": "Geist",
+      "rawFamily": "Geist",
+      "subfamily": "Regular",
+      "postscript": "Geist-Regular",
+      "weight": 400,
+      "style": "normal",
+      "variationAxes": [
+        "wght"
+      ],
+      "identified": true,
+      "isIcon": false
+    },
+    {
+      "file": "kJErBuAJ-Q0hiGPmzHEu345X1JJnBLy4NY8.woff2",
+      "family": "Stack Sans Text",
+      "rawFamily": "Stack Sans Text ExtraLight",
+      "subfamily": "Regular",
+      "postscript": "StackSansText-ExtraLight",
+      "weight": 200,
+      "style": "normal",
+      "variationAxes": [
+        "wght"
+      ],
+      "identified": true,
+      "isIcon": false
+    },
+    {
+      "file": "kJErBuAJ-Q0hiGPmzHEu345X1JJnCry4.woff2",
+      "family": "Stack Sans Text",
+      "rawFamily": "Stack Sans Text ExtraLight",
+      "subfamily": "Regular",
+      "postscript": "StackSansText-ExtraLight",
+      "weight": 200,
+      "style": "normal",
+      "variationAxes": [
+        "wght"
+      ],
+      "identified": true,
+      "isIcon": false
+    },
+    {
+      "file": "memjYa2wxmKQyPMrZX79wwYZQMhsyuSLh4vSZSk.woff2",
+      "family": "Saira",
+      "rawFamily": "Saira Thin",
+      "subfamily": "Regular",
+      "postscript": "SairaThin-Regular",
+      "weight": 100,
+      "style": "normal",
+      "variationAxes": [
+        "wght"
+      ],
+      "identified": true,
+      "isIcon": false
+    },
+    {
+      "file": "memjYa2wxmKQyPMrZX79wwYZQMhsyuSLhovSZSk.woff2",
+      "family": "Saira",
+      "rawFamily": "Saira Thin",
+      "subfamily": "Regular",
+      "postscript": "SairaThin-Regular",
+      "weight": 100,
+      "style": "normal",
+      "variationAxes": [
+        "wght"
+      ],
+      "identified": true,
+      "isIcon": false
+    },
+    {
+      "file": "memjYa2wxmKQyPMrZX79wwYZQMhsyuSLiIvS.woff2",
+      "family": "Saira",
+      "rawFamily": "Saira Thin",
+      "subfamily": "Regular",
+      "postscript": "SairaThin-Regular",
+      "weight": 100,
+      "style": "normal",
+      "variationAxes": [
+        "wght"
+      ],
+      "identified": true,
+      "isIcon": false
+    },
+    {
+      "file": "or3yQ6H-1_WfwkMZI_qYPLs1a-t7PU0AbeEPKK5Q5ClqOw.woff2",
+      "family": "Geist Mono",
+      "rawFamily": "Geist Mono Medium",
+      "subfamily": "Regular",
+      "postscript": "GeistMono-Medium",
+      "weight": 500,
+      "style": "normal",
+      "variationAxes": [],
+      "identified": true,
+      "isIcon": false
+    },
+    {
+      "file": "or3yQ6H-1_WfwkMZI_qYPLs1a-t7PU0AbeEPKK5Z5ClqOw.woff2",
+      "family": "Geist Mono",
+      "rawFamily": "Geist Mono Medium",
+      "subfamily": "Regular",
+      "postscript": "GeistMono-Medium",
+      "weight": 500,
+      "style": "normal",
+      "variationAxes": [],
+      "identified": true,
+      "isIcon": false
+    },
+    {
+      "file": "or3yQ6H-1_WfwkMZI_qYPLs1a-t7PU0AbeEPKK7uxQxXAuk.woff2",
+      "family": "Geist Mono",
+      "rawFamily": "Geist Mono Medium",
+      "subfamily": "Regular",
+      "postscript": "GeistMono-Medium",
+      "weight": 500,
+      "style": "normal",
+      "variationAxes": [],
+      "identified": true,
+      "isIcon": false
+    },
+    {
+      "file": "rP2tp2ywxg089UriI5-g4vlH9VoD8CmcqZG40F9JadbnoEwAC5tRR232VGM.woff2",
+      "family": "DM Sans 9pt",
+      "rawFamily": "DM Sans 9pt Black",
+      "subfamily": "Regular",
+      "postscript": "DMSans9pt-Black",
+      "weight": 900,
+      "style": "normal",
+      "variationAxes": [],
+      "identified": true,
+      "isIcon": false
+    },
+    {
+      "file": "rP2tp2ywxg089UriI5-g4vlH9VoD8CmcqZG40F9JadbnoEwAC5tRSW32.woff2",
+      "family": "DM Sans 9pt",
+      "rawFamily": "DM Sans 9pt Black",
+      "subfamily": "Regular",
+      "postscript": "DMSans9pt-Black",
+      "weight": 900,
+      "style": "normal",
+      "variationAxes": [],
+      "identified": true,
+      "isIcon": false
+    }
+  ],
+  "families": [
+    {
+      "family": "Big Shoulders Display",
+      "weights": [
+        100
+      ],
+      "variable": true,
+      "fileCount": 3,
+      "files": [
+        "fC1_PZJEZG-e9gHhdI4-NBbfd2ys3SjJCx1cw9DuHpM.woff2",
+        "fC1_PZJEZG-e9gHhdI4-NBbfd2ys3SjJCx1cwtDuHpM.woff2",
+        "fC1_PZJEZG-e9gHhdI4-NBbfd2ys3SjJCx1czNDu.woff2"
+      ]
+    },
+    {
+      "family": "DM Mono",
+      "weights": [
+        400
+      ],
+      "variable": false,
+      "fileCount": 2,
+      "files": [
+        "aFTU7PB1QTsUX8KYthSQBLyM.woff2",
+        "aFTU7PB1QTsUX8KYthqQBA.woff2"
+      ]
+    },
+    {
+      "family": "DM Sans 9pt",
+      "weights": [
+        900
+      ],
+      "variable": false,
+      "fileCount": 2,
+      "files": [
+        "rP2tp2ywxg089UriI5-g4vlH9VoD8CmcqZG40F9JadbnoEwAC5tRR232VGM.woff2",
+        "rP2tp2ywxg089UriI5-g4vlH9VoD8CmcqZG40F9JadbnoEwAC5tRSW32.woff2"
+      ]
+    },
+    {
+      "family": "Erica One",
+      "weights": [
+        400
+      ],
+      "variable": false,
+      "fileCount": 2,
+      "files": [
+        "WBLnrEXccV9VGrOKmGDFUkXNFME.woff2",
+        "WBLnrEXccV9VGrOKmGDFXEXN.woff2"
+      ]
+    },
+    {
+      "family": "Fragment Mono",
+      "weights": [
+        400
+      ],
+      "variable": false,
+      "fileCount": 3,
+      "files": [
+        "4iCr6K5wfMRRjxp0DA6-2CLnB41HhrUI.woff2",
+        "4iCr6K5wfMRRjxp0DA6-2CLnB45HhrUI.woff2",
+        "4iCr6K5wfMRRjxp0DA6-2CLnB4NHhg.woff2"
+      ]
+    },
+    {
+      "family": "Geist",
+      "weights": [
+        400
+      ],
+      "variable": true,
+      "fileCount": 5,
+      "files": [
+        "gyByhwUxId8gMEwRGFWfOw.woff2",
+        "gyByhwUxId8gMEwSGFWfOw.woff2",
+        "gyByhwUxId8gMEwTGFWfOw.woff2",
+        "gyByhwUxId8gMEwYGFWfOw.woff2",
+        "gyByhwUxId8gMEwcGFU.woff2"
+      ]
+    },
+    {
+      "family": "Geist Mono",
+      "weights": [
+        500
+      ],
+      "variable": false,
+      "fileCount": 3,
+      "files": [
+        "or3yQ6H-1_WfwkMZI_qYPLs1a-t7PU0AbeEPKK5Q5ClqOw.woff2",
+        "or3yQ6H-1_WfwkMZI_qYPLs1a-t7PU0AbeEPKK5Z5ClqOw.woff2",
+        "or3yQ6H-1_WfwkMZI_qYPLs1a-t7PU0AbeEPKK7uxQxXAuk.woff2"
+      ]
+    },
+    {
+      "family": "Saira",
+      "weights": [
+        100
+      ],
+      "variable": true,
+      "fileCount": 3,
+      "files": [
+        "memjYa2wxmKQyPMrZX79wwYZQMhsyuSLh4vSZSk.woff2",
+        "memjYa2wxmKQyPMrZX79wwYZQMhsyuSLhovSZSk.woff2",
+        "memjYa2wxmKQyPMrZX79wwYZQMhsyuSLiIvS.woff2"
+      ]
+    },
+    {
+      "family": "Space Grotesk",
+      "weights": [
+        300
+      ],
+      "variable": true,
+      "fileCount": 1,
+      "files": [
+        "V8mDoQDjQSkFtoMM3T6r8E7mPbF4Cw.woff2"
+      ]
+    },
+    {
+      "family": "Stack Sans Headline ExtraLight",
+      "weights": [
+        500
+      ],
+      "variable": false,
+      "fileCount": 2,
+      "files": [
+        "1PtFg9jZXvmMnkLnuURbaukKZJTyrDV326uH6mSinjBIwc5fIjFAoAQ.woff2",
+        "1PtFg9jZXvmMnkLnuURbaukKZJTyrDV326uH6mSinjBIwc5fIjFOoAQw3Q.woff2"
+      ]
+    },
+    {
+      "family": "Stack Sans Notch ExtraLight",
+      "weights": [
+        500
+      ],
+      "variable": false,
+      "fileCount": 2,
+      "files": [
+        "TwMY-JcVXlQd3ooGEx9EbUzgioTr5BY5lEpidqlSR8fQuS2QEmbKBw.woff2",
+        "TwMY-JcVXlQd3ooGEx9EbUzgioTr5BY5lEpidqlSR8fQuS2eEmY.woff2"
+      ]
+    },
+    {
+      "family": "Stack Sans Text",
+      "weights": [
+        200
+      ],
+      "variable": true,
+      "fileCount": 2,
+      "files": [
+        "kJErBuAJ-Q0hiGPmzHEu345X1JJnBLy4NY8.woff2",
+        "kJErBuAJ-Q0hiGPmzHEu345X1JJnCry4.woff2"
+      ]
+    }
+  ],
+  "unidentified": [],
+  "meta": {
+    "generatedAt": "2026-09-30T13:35:16.536Z",
+    "tool": "fontkit"
+  }
+}

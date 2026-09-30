@@ -1,0 +1,119 @@
+{
+  "typography": [
+    {
+      "role": "display",
+      "fontFamily": "Space Mono",
+      "fontSize": "48px",
+      "fontWeight": "700",
+      "lineHeight": "48px",
+      "letterSpacing": "normal",
+      "color": "#050707",
+      "sampleText": "KeepGettingBetter"
+    },
+    {
+      "role": "heading",
+      "fontFamily": "Space Mono",
+      "fontSize": "18px",
+      "fontWeight": "400",
+      "lineHeight": "27px",
+      "letterSpacing": "normal",
+      "color": "#050707",
+      "sampleText": "O encontro anual dos devs que chegaram longe e não têm inten"
+    },
+    {
+      "role": "body",
+      "fontFamily": "Space Mono",
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "lineHeight": "24px",
+      "letterSpacing": "normal",
+      "color": "#FFFFFF",
+      "sampleText": "programação"
+    },
+    {
+      "role": "heading-2",
+      "fontFamily": "Space Mono",
+      "fontSize": "14px",
+      "fontWeight": "400",
+      "lineHeight": "28px",
+      "letterSpacing": "normal",
+      "color": "#050707",
+      "sampleText": "14 de novembro · São Paulo · 300 participantes"
+    },
+    {
+      "role": "link",
+      "fontFamily": "sans-serif",
+      "fontSize": "12px",
+      "fontWeight": "400",
+      "lineHeight": "normal",
+      "letterSpacing": "normal",
+      "color": "#0000EE",
+      "sampleText": ""
+    }
+  ],
+  "spacing": {
+    "observed": [
+      10,
+      20,
+      22,
+      24,
+      30,
+      40,
+      70
+    ],
+    "baseUnit": 8
+  },
+  "radius": [],
+  "shadows": [],
+  "buttons": [
+    {
+      "label": "button",
+      "background": "transparent",
+      "backgroundImage": "",
+      "backdropFilter": "",
+      "color": "#000000",
+      "padding": "0px",
+      "borderRadius": "0px",
+      "border": "0px none rgb(0, 0, 0)",
+      "boxShadow": "none",
+      "fontSize": "12px",
+      "fontWeight": "400",
+      "height": "48px"
+    }
+  ],
+  "cards": [
+    {
+      "label": "card",
+      "background": "transparent",
+      "backgroundImage": "",
+      "backdropFilter": "",
+      "color": "#000000",
+      "padding": "0px",
+      "borderRadius": "0px",
+      "border": "0px none rgb(0, 0, 0)",
+      "boxShadow": "none",
+      "fontSize": "12px",
+      "fontWeight": "400",
+      "height": "660px"
+    }
+  ],
+  "nav": {
+    "label": "navigation",
+    "background": "#F0EFEE",
+    "backgroundImage": "",
+    "backdropFilter": "",
+    "color": "#000000",
+    "padding": "0px 0px 0px 40px",
+    "borderRadius": "0px",
+    "border": "0px none rgb(0, 0, 0)",
+    "boxShadow": "none",
+    "fontSize": "12px",
+    "fontWeight": "400",
+    "height": "529.984px"
+  },
+  "chips": [],
+  "statCells": [],
+  "tabs": [],
+  "backgrounds": [],
+  "glass": []
+}

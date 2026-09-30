@@ -1,0 +1,174 @@
+# Asset Descriptions
+
+⚠️  No vision credentials — descriptions below are catalog-derived (alt text, headings, section context, filename) instead of Vision-generated. To get richer Vision descriptions on the next capture, set GEMINI_API_KEY (or GOOGLE_API_KEY), or HYPERFRAMES_VERTEX_PROJECT_ID plus HYPERFRAMES_VERTEX_SERVICE_ACCOUNT for Vertex service-account auth, and re-run.
+
+The `logo-<hash>.svg` filename prefix is a structural hint (DOM said this SVG was inside a `<header>`, home-link `<a>`, or had an aria-label matching the page brand). To pick the actual brand logo without Vision, open the `logo-*` candidates in a previewer or rasterize them with `sharp` before referencing — composing a fake logo ships off-brand in the final video.
+
+- 00s0d3hmrqch55xr00ttys2tq.png — 136KB, 00s0d3hmrqch55xr00ttys2tq
+- 247e8rkzhtbexi43wgxblkmykos.png — 150KB, 247e8rkzhtbexi43wgxblkmykos
+- 2ncbtwofmlwgrwwredu1wkki.png — 145KB, 2ncbtwofmlwgrwwredu1wkki
+- 3e0k0q2oeeydiun5p35qvmvvmeq.png — 137KB, 3e0k0q2oeeydiun5p35qvmvvmeq
+- 3fvxjne4491xslnsuhohrwjlr0a.png — 139KB, 3fvxjne4491xslnsuhohrwjlr0a
+- 3zo8deehtvxqxomp2yoq30xdegk.png — 131KB, 3zo8deehtvxqxomp2yoq30xdegk
+- 5jsm6wcsyd1tiadcxpvz4gw.png — 140KB, 5jsm6wcsyd1tiadcxpvz4gw
+- 60yzuegqnjbg1raoqvz5krc7tu.jpg — 69KB, 60yzuegqnjbg1raoqvz5krc7tu
+- 850u4gwr048sbzrwq1ffl9nig.jpg — 281KB, 850u4gwr048sbzrwq1ffl9nig
+- 91x79lgsy3h8khcgzviyod9uivm.png — 151KB, 91x79lgsy3h8khcgzviyod9uivm
+- 9mnfsy6v1ux1ug8nc43sg5v4n5m.jpg — 143KB, 9mnfsy6v1ux1ug8nc43sg5v4n5m
+- alestan.png — 144KB, alestan
+- aptwufpztmdk8hywjmhrzeebwu.png — 141KB, aptwufpztmdk8hywjmhrzeebwu
+- cpkm5rt4betstywhutz2ir3jk0.png — 132KB, cpkm5rt4betstywhutz2ir3jk0
+- ctgdstfydeoflaswlr6gfuo9ka.png — 140KB, ctgdstfydeoflaswlr6gfuo9ka
+- do6jgii6a2ke1qwofkhi3f9ll3k.png — 148KB, do6jgii6a2ke1qwofkhi3f9ll3k
+- f2spynresigulcxgexjiztrxgey.png — 149KB, f2spynresigulcxgexjiztrxgey
+- favicon.png — 0KB, favicon
+- fnmhoij5oicm66trjbxfx1hllc.png — 139KB, fnmhoij5oicm66trjbxfx1hllc
+- framer-18j4t33.jpg — 70KB, framer 18j4t33
+- framer-kcuxu7.png — 97KB, framer kcuxu7
+- framer-slideshow-framer-slideshow-axis-x.jpg — 52KB, framer slideshow framer slideshow axis x
+- g4feulckrp88epiffejdp3plygq.png — 138KB, g4feulckrp88epiffejdp3plygq
+- ggvcssf1uy0yzqueruwsl33pri.png — 131KB, ggvcssf1uy0yzqueruwsl33pri
+- gnkpgjcxn8g5wq4e167aipgf0.png — 140KB, gnkpgjcxn8g5wq4e167aipgf0
+- gnyfo0uw840aoajlce0t3e04ae.png — 138KB, gnyfo0uw840aoajlce0t3e04ae
+- gnzyl2grsffatsmnmwxbvwdfgi.png — 286KB, gnzyl2grsffatsmnmwxbvwdfgi
+- hero-10.jpg — 60KB, hero 10
+- hero-11.jpg — 237KB, hero 11
+- hero-13.jpg — 65KB, hero 13
+- hero-14.jpg — 231KB, hero 14
+- hero-16.jpg — 45KB, hero 16
+- hero-17.jpg — 179KB, hero 17
+- hero-19.jpg — 54KB, hero 19
+- hero-2.jpg — 201KB, hero 2
+- hero-20.jpg — 206KB, hero 20
+- hero-28.jpg — 72KB, hero 28
+- hero-4.jpg — 49KB, hero 4
+- hero-5.jpg — 197KB, hero 5
+- hero-7.jpg — 58KB, hero 7
+- hero-8.jpg — 228KB, hero 8
+- htjfmylfxfzya5p9olihem18.png — 132KB, htjfmylfxfzya5p9olihem18
+- ib56ywppfzu0picijpaf6uwje.png — 150KB, ib56ywppfzu0picijpaf6uwje
+- icon-icon-unsized-2.png — 4KB, icon icon unsized 2
+- icon-icon-unsized.png — 0KB, icon icon unsized
+- image-100.png — 91KB, image 100
+- image-102.png — 93KB, image 102
+- image-104.png — 99KB, image 104
+- image-106.png — 92KB, image 106
+- image-108.png — 99KB, image 108
+- image-34.png — 98KB, image 34
+- image-36.png — 73KB, image 36
+- image-38.png — 106KB, image 38
+- image-40.png — 80KB, image 40
+- image-42.png — 86KB, image 42
+- image-44.png — 104KB, image 44
+- image-46.png — 97KB, image 46
+- image-48.png — 104KB, image 48
+- image-50.png — 92KB, image 50
+- image-52.png — 93KB, image 52
+- image-54.png — 97KB, image 54
+- image-56.png — 105KB, image 56
+- image-58.png — 103KB, image 58
+- image-60.png — 111KB, image 60
+- image-62.png — 98KB, image 62
+- image-64.png — 93KB, image 64
+- image-66.png — 97KB, image 66
+- image-68.png — 103KB, image 68
+- image-70.png — 96KB, image 70
+- image-72.png — 100KB, image 72
+- image-74.png — 99KB, image 74
+- image-76.png — 114KB, image 76
+- image-78.png — 101KB, image 78
+- image-80.png — 99KB, image 80
+- image-82.png — 101KB, image 82
+- image-84.png — 100KB, image 84
+- image-86.png — 102KB, image 86
+- image-88.png — 102KB, image 88
+- image-90.png — 93KB, image 90
+- image-92.png — 98KB, image 92
+- image-94.png — 102KB, image 94
+- image-96.png — 94KB, image 96
+- image-98.png — 104KB, image 98
+- itysjx30qbrrqwa3ekza3urqyy.png — 143KB, itysjx30qbrrqwa3ekza3urqyy
+- iydzgpipjgftgrupk1y5v4tg.jpg — 152KB, iydzgpipjgftgrupk1y5v4tg
+- izhy5vfdthyxxtupzsrxmmmsby.png — 134KB, izhy5vfdthyxxtupzsrxmmmsby
+- izymzgphcvpwr4c2eoay83kuhgi.jpg — 271KB, izymzgphcvpwr4c2eoay83kuhgi
+- jseumup4zbrgvnokxpt5df9xye.png — 152KB, jseumup4zbrgvnokxpt5df9xye
+- k3oqyaicsxfsdxdinuwsqhytdm.png — 134KB, k3oqyaicsxfsdxdinuwsqhytdm
+- kxcqhrthf7ixzz119flxmfalpmq.png — 146KB, kxcqhrthf7ixzz119flxmfalpmq
+- logo-69a867f4.svg — 0KB, logo 69a867f4
+- logo-b1d74647.svg — 0KB, logo b1d74647
+- lxlvvrotrxoniv7bnkyqvfaswi.png — 147KB, lxlvvrotrxoniv7bnkyqvfaswi
+- m8unuwye2wgq9ctq9wqshrjoo.jpg — 312KB, m8unuwye2wgq9ctq9wqshrjoo
+- maxresdefault.webp — 143KB, maxresdefault
+- mbspushzjxx2qsw1jwl2u7me7u.png — 158KB, mbspushzjxx2qsw1jwl2u7me7u
+- my8cd2dzngf8mkwmj0m3sxdckiu.png — 148KB, my8cd2dzngf8mkwmj0m3sxdckiu
+- ofw4wlhe7c283jczxz2mbmusz4.png — 142KB, ofw4wlhe7c283jczxz2mbmusz4
+- og-image.jpg — 222KB, og image
+- pjguckuszhi2al9rpnv0kpjme.png — 149KB, pjguckuszhi2al9rpnv0kpjme
+- presencial.jpg — 150KB, presencial
+- pwdbxe20n5m2kg57csv6clcwgpm.jpg — 308KB, pwdbxe20n5m2kg57csv6clcwgpm
+- pz8ycamgh25fbl33nykxn9qzao.jpg — 273KB, pz8ycamgh25fbl33nykxn9qzao
+- q9bhrj9kn3t3aokahhj6vhzfqp8.png — 142KB, q9bhrj9kn3t3aokahhj6vhzfqp8
+- rbrxcfavwulokirngmpaaiabac.png — 135KB, rbrxcfavwulokirngmpaaiabac
+- rdae2sycreibz2ndm38g2gjfi.png — 141KB, rdae2sycreibz2ndm38g2gjfi
+- rwp48zb8pbhkn8degozkg2q5nyo.png — 154KB, rwp48zb8pbhkn8degozkg2q5nyo
+- se-voc-precisou-pensar-se-isso-pra-voc-p.png — 414KB, se voc precisou pensar se isso pra voc p
+- trs8unpxgrozi9ezobwaiwgwj2m.jpg — 246KB, trs8unpxgrozi9ezobwaiwgwj2m
+- ugbkn4x7aglbjjfrlwk82poiooc.png — 137KB, ugbkn4x7aglbjjfrlwk82poiooc
+- v7d6bvqmmokdpbungfwlpsqnfo4.jpg — 322KB, v7d6bvqmmokdpbungfwlpsqnfo4
+- wjkkvr2jrvk3ot6qlrhf7f8evg.png — 104KB, wjkkvr2jrvk3ot6qlrhf7f8evg
+- wwpc4cvmdmtpspkqxomypd1bku.png — 114KB, wwpc4cvmdmtpspkqxomypd1bku
+- wyauric0zc3mhe8qv8gzkacsq.png — 130KB, wyauric0zc3mhe8qv8gzkacsq
+- zsfatvfquwgy9rqxscdxh0qucco.png — 96KB, zsfatvfquwgy9rqxscdxh0qucco
+- zucoh8jo4fyptbx5p9jia9q9hya.png — 149KB, zucoh8jo4fyptbx5p9jia9q9hya
+- svgs/logo-2b1e481d-2.svg — logo 2b1e481d 2
+- svgs/logo-2b1e481d-3.svg — logo 2b1e481d 3
+- svgs/logo-2b1e481d-4.svg — logo 2b1e481d 4
+- svgs/logo-2b1e481d.svg — logo 2b1e481d
+- svgs/logo-385bd1c8-2.svg — logo 385bd1c8 2
+- svgs/logo-385bd1c8.svg — logo 385bd1c8
+- svgs/logo-8bfd4476.svg — logo 8bfd4476
+- svgs/svg-2b1e481d-10.svg — svg 2b1e481d 10
+- svgs/svg-2b1e481d-11.svg — svg 2b1e481d 11
+- svgs/svg-2b1e481d-2.svg — svg 2b1e481d 2
+- svgs/svg-2b1e481d-3.svg — svg 2b1e481d 3
+- svgs/svg-2b1e481d-4.svg — svg 2b1e481d 4
+- svgs/svg-2b1e481d-5.svg — svg 2b1e481d 5
+- svgs/svg-2b1e481d-6.svg — svg 2b1e481d 6
+- svgs/svg-2b1e481d-7.svg — svg 2b1e481d 7
+- svgs/svg-2b1e481d-8.svg — svg 2b1e481d 8
+- svgs/svg-2b1e481d-9.svg — svg 2b1e481d 9
+- svgs/svg-2b1e481d.svg — svg 2b1e481d
+- svgs/svg-385bd1c8-2.svg — svg 385bd1c8 2
+- svgs/svg-385bd1c8.svg — svg 385bd1c8
+- svgs/svg-ba21f7c5.svg — svg ba21f7c5
+- svgs/svg-d761dfc5.svg — svg d761dfc5
+- fonts/1PtFg9jZXvmMnkLnuURbaukKZJTyrDV326uH6mSinjBIwc5fIjFAoAQ.woff2 — font file
+- fonts/1PtFg9jZXvmMnkLnuURbaukKZJTyrDV326uH6mSinjBIwc5fIjFOoAQw3Q.woff2 — font file
+- fonts/4iCr6K5wfMRRjxp0DA6-2CLnB41HhrUI.woff2 — font file
+- fonts/4iCr6K5wfMRRjxp0DA6-2CLnB45HhrUI.woff2 — font file
+- fonts/4iCr6K5wfMRRjxp0DA6-2CLnB4NHhg.woff2 — font file
+- fonts/TwMY-JcVXlQd3ooGEx9EbUzgioTr5BY5lEpidqlSR8fQuS2QEmbKBw.woff2 — font file
+- fonts/TwMY-JcVXlQd3ooGEx9EbUzgioTr5BY5lEpidqlSR8fQuS2eEmY.woff2 — font file
+- fonts/V8mDoQDjQSkFtoMM3T6r8E7mPbF4Cw.woff2 — font file
+- fonts/WBLnrEXccV9VGrOKmGDFUkXNFME.woff2 — font file
+- fonts/WBLnrEXccV9VGrOKmGDFXEXN.woff2 — font file
+- fonts/aFTU7PB1QTsUX8KYthSQBLyM.woff2 — font file
+- fonts/aFTU7PB1QTsUX8KYthqQBA.woff2 — font file
+- fonts/fC1_PZJEZG-e9gHhdI4-NBbfd2ys3SjJCx1cw9DuHpM.woff2 — font file
+- fonts/fC1_PZJEZG-e9gHhdI4-NBbfd2ys3SjJCx1cwtDuHpM.woff2 — font file
+- fonts/fC1_PZJEZG-e9gHhdI4-NBbfd2ys3SjJCx1czNDu.woff2 — font file
+- fonts/gyByhwUxId8gMEwRGFWfOw.woff2 — font file
+- fonts/gyByhwUxId8gMEwSGFWfOw.woff2 — font file
+- fonts/gyByhwUxId8gMEwTGFWfOw.woff2 — font file
+- fonts/gyByhwUxId8gMEwYGFWfOw.woff2 — font file
+- fonts/gyByhwUxId8gMEwcGFU.woff2 — font file
+- fonts/kJErBuAJ-Q0hiGPmzHEu345X1JJnBLy4NY8.woff2 — font file
+- fonts/kJErBuAJ-Q0hiGPmzHEu345X1JJnCry4.woff2 — font file
+- fonts/memjYa2wxmKQyPMrZX79wwYZQMhsyuSLh4vSZSk.woff2 — font file
+- fonts/memjYa2wxmKQyPMrZX79wwYZQMhsyuSLhovSZSk.woff2 — font file
+- fonts/memjYa2wxmKQyPMrZX79wwYZQMhsyuSLiIvS.woff2 — font file
+- fonts/or3yQ6H-1_WfwkMZI_qYPLs1a-t7PU0AbeEPKK5Q5ClqOw.woff2 — font file
+- fonts/or3yQ6H-1_WfwkMZI_qYPLs1a-t7PU0AbeEPKK5Z5ClqOw.woff2 — font file
+- fonts/or3yQ6H-1_WfwkMZI_qYPLs1a-t7PU0AbeEPKK7uxQxXAuk.woff2 — font file
+- fonts/rP2tp2ywxg089UriI5-g4vlH9VoD8CmcqZG40F9JadbnoEwAC5tRR232VGM.woff2 — font file
+- fonts/rP2tp2ywxg089UriI5-g4vlH9VoD8CmcqZG40F9JadbnoEwAC5tRSW32.woff2 — font file

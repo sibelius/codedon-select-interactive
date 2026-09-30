@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=1920, height=1080" />
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+<style>
+@font-face{font-family:"Space Mono";font-weight:400;src:url("assets/fonts/SpaceMono-Regular.woff") format("woff")}
+@font-face{font-family:"Space Mono";font-weight:700;src:url("assets/fonts/SpaceMono-Bold.woff") format("woff")}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:1920px;height:1080px;overflow:hidden;background:#F0EFEE}
+#root{position:relative;width:100%;height:100%;overflow:hidden;background:#F0EFEE;color:#050707;font-family:"Space Mono",monospace}
+.scene{position:absolute;inset:0;width:100%;height:100%;overflow:hidden}
+.bg-paper{position:absolute;inset:0;background:#F0EFEE}
+.bg-ink{position:absolute;inset:0;background:#050707}
+.on-ink{color:#F0EFEE}
+.grain{position:absolute;inset:0;pointer-events:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='260' height='260'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1.1 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");opacity:.07;mix-blend-mode:multiply}
+.on-ink .grain,.grain.dk{opacity:.10;mix-blend-mode:screen}
+.gut{position:absolute;top:0;bottom:0;background-image:radial-gradient(circle,#D4D3D1 1.3px,transparent 1.7px);background-size:16px 16px}
+.on-ink .gut{background-image:radial-gradient(circle,#1c1f1f 1.3px,transparent 1.7px)}
+.vl{position:absolute;top:0;bottom:0;width:1px;background:#D4D3D1;transform-origin:50% 0}
+.hl{position:absolute;left:0;right:0;height:1px;background:#D4D3D1;transform-origin:0 50%}
+.on-ink .vl,.on-ink .hl{background:#2A2D2D}
+.star{position:absolute;width:20px;height:20px;margin:-10px 0 0 -10px}
+.star svg{display:block}
+.hatch{position:absolute;left:0;right:0;background:repeating-linear-gradient(135deg,#D4D3D1 0 1px,transparent 1px 9px);border-top:1px solid #D4D3D1;border-bottom:1px solid #D4D3D1}
+.col{position:absolute;left:400px;width:1120px}
+.b{font-weight:700}
+.up{text-transform:uppercase}
+.mute{color:#6B6A69}
+.steel{color:#99A0A9}
+.nw{white-space:nowrap}
+.ty{display:block;flex-shrink:0;overflow:hidden;white-space:nowrap;width:0;line-height:1.12;padding-bottom:.04em}
+.cur{display:block;flex-shrink:0;width:.6em;height:.9em;background:currentColor;margin-top:.1em;opacity:0}
+.line{display:flex;align-items:flex-start;white-space:nowrap}
+.btn{display:inline-flex;align-items:center;justify-content:center;background:#050707;color:#F0EFEE;height:64px;padding:0 26px;
+  font-size:24px;white-space:nowrap;perspective:600px;position:relative;overflow:hidden}
+.on-ink .btn,.btn.lt{background:#F0EFEE;color:#050707}
+.btn .fa,.btn .fb{display:block;backface-visibility:hidden;transform-origin:50% 50% -14px}
+.btn .fb{position:absolute;inset:0;display:flex;align-items:center;justify-content:center}
+.photo{position:absolute;overflow:hidden;background:#111}
+.photo img{display:block;width:100%;height:100%;object-fit:cover;filter:grayscale(1) contrast(1.12) brightness(.96)}
+.photo::after{content:"";position:absolute;inset:0;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='260' height='260'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1.1 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");opacity:.22;mix-blend-mode:screen}
+.logo{display:block;height:auto}
+.tile{display:flex;flex-direction:column;gap:8px}
+.tile .ph{position:relative;overflow:hidden;background:#ddd}
+.tile .ph img{display:block;width:100%;height:100%;object-fit:cover;filter:grayscale(1) contrast(1.08)}
+.tile .ph::after{content:"";position:absolute;inset:0;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='260' height='260'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1.1 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");opacity:.18;mix-blend-mode:screen}
+.tile .nm{font-weight:700;font-size:17px;line-height:1.25}
+.tile .rl{font-size:13px;color:#6B6A69;line-height:1.35}
+
+.caps{position:absolute;left:400px;right:400px;top:52px;display:flex;align-items:baseline;gap:30px}
+.ck{font-size:22px;color:#6B6A69}
+.cap{font-size:58px;line-height:1}
+.browser{position:absolute;left:259px;top:168px;border:1px solid #050707;background:#050707}
+.chrome{height:44px;display:flex;align-items:center;gap:18px;padding:0 18px;background:#F0EFEE;border-bottom:1px solid #050707;font-size:18px}
+.chrome .logo{width:84px}
+.chrome span{flex:1;text-align:center;color:#6B6A69}
+.chrome i{display:block;width:84px}
+.screen{position:relative;overflow:hidden;width:1400px;height:788px;background:#F0EFEE}
+.shot{position:absolute;left:0;top:0;display:block;width:1400px;height:788px}
+
+#end-logo{position:absolute;left:400px;top:28px;width:150px}
+.end-l{top:250px;width:520px}
+.end-kick{font-size:20px;color:#6B6A69;margin-bottom:20px}
+.end-h{font-weight:400;font-size:76px;line-height:1.02;letter-spacing:-.01em}
+.end-sub{font-size:24px;margin-top:22px}
+.end-r{position:absolute;left:960px;width:560px;top:180px;display:flex;flex-direction:column;align-items:flex-start}
+.lbl{font-size:22px;margin-bottom:4px}
+.old{position:relative;font-size:52px;color:#6B6A69;margin-bottom:26px;line-height:1.1}
+.old i{position:absolute;left:-4px;right:-4px;top:54%;height:4px;background:#6B6A69;transform-origin:0 50%}
+.code{background:#050707;color:#F0EFEE;font-size:60px;line-height:1;padding:20px 24px;margin:8px 0 22px}
+.new{font-size:108px;line-height:1;margin-bottom:34px}
+.off{font-size:20px;border:1px solid #050707;padding:2px 8px;margin-left:10px;font-weight:700}
+.end-meta{position:absolute;left:400px;right:400px;top:1004px;display:flex;justify-content:space-between;font-size:20px;color:#050707}</style>
+</head>
+<body>
+<div id="root" data-composition-id="tour-16x9" data-start="0" data-duration="15" data-width="1920" data-height="1080" data-fps="30">
+
+<section id="t1" class="scene clip" data-start="0" data-duration="2.8" data-track-index="1" style="--star:#D4D3D1">
+  <div class="bg-paper"></div>
+  <div class="construct"><div class="gut" style="left:0;width:360px"></div><div class="gut" style="left:1561px;right:0"></div><div class="vl" style="left:360px"></div><div class="vl" style="left:1560px"></div></div>
+  <div class="caps">
+    <span class="ck" id="t1-k">01 / 04</span>
+    <span class="cap b up"><span class="line "><span class="ty" id="t1-c">Keep getting better</span><i class="cur" id="t1-c-c"></i></span></span>
+  </div>
+  <div class="browser" id="t1-b">
+    <div class="chrome"><img class="logo" src="assets/logo/select-ink.svg" alt="" /><span>codecon.dev/select</span><i></i></div>
+    <div class="screen"><img id="t1-img" class="shot" src="assets/site/scroll-000.png" alt="" style="transform-origin:30% 40%" /></div>
+  </div>
+  <div class="grain"></div>
+</section>
+<section id="t2" class="scene clip" data-start="2.8" data-duration="2.8" data-track-index="1" style="--star:#D4D3D1">
+  <div class="bg-paper"></div>
+  <div class="construct"><div class="gut" style="left:0;width:360px"></div><div class="gut" style="left:1561px;right:0"></div><div class="vl" style="left:360px"></div><div class="vl" style="left:1560px"></div></div>
+  <div class="caps">
+    <span class="ck" id="t2-k">02 / 04</span>
+    <span class="cap b up"><span class="line "><span class="ty" id="t2-c">300 vagas. apenas.</span><i class="cur" id="t2-c-c"></i></span></span>
+  </div>
+  <div class="browser" id="t2-b">
+    <div class="chrome"><img class="logo" src="assets/logo/select-ink.svg" alt="" /><span>codecon.dev/select</span><i></i></div>
+    <div class="screen"><img id="t2-img" class="shot" src="assets/site/scroll-016.png" alt="" style="transform-origin:50% 80%" /></div>
+  </div>
+  <div class="grain"></div>
+</section>
+<section id="t3" class="scene clip" data-start="5.6" data-duration="2.8" data-track-index="1" style="--star:#D4D3D1">
+  <div class="bg-paper"></div>
+  <div class="construct"><div class="gut" style="left:0;width:360px"></div><div class="gut" style="left:1561px;right:0"></div><div class="vl" style="left:360px"></div><div class="vl" style="left:1560px"></div></div>
+  <div class="caps">
+    <span class="ck" id="t3-k">03 / 04</span>
+    <span class="cap b up"><span class="line "><span class="ty" id="t3-c">Quem vai</span><i class="cur" id="t3-c-c"></i></span></span>
+  </div>
+  <div class="browser" id="t3-b">
+    <div class="chrome"><img class="logo" src="assets/logo/select-ink.svg" alt="" /><span>codecon.dev/select</span><i></i></div>
+    <div class="screen"><img id="t3-img" class="shot" src="assets/site/scroll-032.png" alt="" style="transform-origin:35% 60%" /></div>
+  </div>
+  <div class="grain"></div>
+</section>
+<section id="t4" class="scene clip" data-start="8.399999999999999" data-duration="2.8" data-track-index="1" style="--star:#D4D3D1">
+  <div class="bg-paper"></div>
+  <div class="construct"><div class="gut" style="left:0;width:360px"></div><div class="gut" style="left:1561px;right:0"></div><div class="vl" style="left:360px"></div><div class="vl" style="left:1560px"></div></div>
+  <div class="caps">
+    <span class="ck" id="t4-k">04 / 04</span>
+    <span class="cap b up"><span class="line "><span class="ty" id="t4-c">Garanta seu lugar</span><i class="cur" id="t4-c-c"></i></span></span>
+  </div>
+  <div class="browser" id="t4-b">
+    <div class="chrome"><img class="logo" src="assets/logo/select-ink.svg" alt="" /><span>codecon.dev/select</span><i></i></div>
+    <div class="screen"><img id="t4-img" class="shot" src="assets/site/scroll-024.png" alt="" style="transform-origin:55% 45%" /></div>
+  </div>
+  <div class="grain"></div>
+</section>
+<section id="end" class="scene clip" data-start="11.2" data-duration="3.8" data-track-index="1" style="--star:#D4D3D1">
+  <div class="bg-paper"></div>
+  <div class="construct"><div class="gut" style="left:0;width:360px"></div><div class="gut" style="left:1561px;right:0"></div><div class="vl" style="left:360px"></div><div class="vl" style="left:1560px"></div><div class="hl" style="top:100px"></div><div class="star" style="left:360.5px;top:100.5px"><svg viewBox="0 0 20 20" width="20" height="20"><path d="M10 0 C10.8 7 13 9.2 20 10 C13 10.8 10.8 13 10 20 C9.2 13 7 10.8 0 10 C7 9.2 9.2 7 10 0Z" style="fill:var(--star)"/></svg></div><div class="star" style="left:1560.5px;top:100.5px"><svg viewBox="0 0 20 20" width="20" height="20"><path d="M10 0 C10.8 7 13 9.2 20 10 C13 10.8 10.8 13 10 20 C9.2 13 7 10.8 0 10 C7 9.2 9.2 7 10 0Z" style="fill:var(--star)"/></svg></div><div class="hl" style="top:980px"></div><div class="star" style="left:360.5px;top:980.5px"><svg viewBox="0 0 20 20" width="20" height="20"><path d="M10 0 C10.8 7 13 9.2 20 10 C13 10.8 10.8 13 10 20 C9.2 13 7 10.8 0 10 C7 9.2 9.2 7 10 0Z" style="fill:var(--star)"/></svg></div><div class="star" style="left:1560.5px;top:980.5px"><svg viewBox="0 0 20 20" width="20" height="20"><path d="M10 0 C10.8 7 13 9.2 20 10 C13 10.8 10.8 13 10 20 C9.2 13 7 10.8 0 10 C7 9.2 9.2 7 10 0Z" style="fill:var(--star)"/></svg></div></div>
+  <div class="grain"></div>
+  <img class="logo" id="end-logo" src="assets/logo/select-ink.svg" alt="select experience" />
+  <div class="col end-l">
+    <div class="end-kick up" id="end-kick">tudo isso em 14.11 · são paulo</div>
+    <h2 class="end-h"><span class="line "><span class="ty" id="end-h1">Garanta seu</span><i class="cur" id="end-h1-c"></i></span><span class="line "><span class="ty" id="end-h2">lugar</span><i class="cur" id="end-h2-c"></i></span></h2>
+    <div class="end-sub mute" id="end-sub">São poucas vagas disponíveis.</div>
+  </div>
+  <div class="end-r">
+    <div class="lbl" id="end-l1">Lote atual</div>
+    <div class="old" id="end-old"><span>R$ 1.290</span><i id="end-strike"></i></div>
+    <div class="lbl" id="end-l2">com o cupom de palestrante <span class="off">-20%</span></div>
+    <div class="code b" id="end-code"><span class="ty" id="end-code-t">PALESTRANTE20</span><i class="cur" id="end-code-t-c"></i></div>
+    <div class="new b nw" id="end-new">R$ 1.032</div>
+    <div class="btn " id="end-btn"><span class="fa">garanta seu lugar →</span><span class="fb" style="opacity:0">use PALESTRANTE20 →</span></div>
+  </div>
+  <div class="end-meta up" id="end-meta"><span>14 de novembro <b class="steel">//</b> State Innovation Center · SP</span><span>codecon.dev/select</span></div>
+</section>
+<audio id="bgm" src="assets/audio/tour.mp3" data-start="0" data-duration="15" data-track-index="9" data-volume="0.85"></audio>
+</div>
+<script>
+const P = false;
+const tl = gsap.timeline({ paused: true });
+// typed mono text: width grows in whole characters, block cursor rides the edge
+function type(sel, n, at, cps, keepCursor) {
+  const el = document.querySelector(sel);
+  const cur = el.nextElementSibling && el.nextElementSibling.classList.contains("cur") ? el.nextElementSibling : null;
+  const d = n / (cps || 22);
+  const pr = { v: 0 };
+  el.style.width = "0ch";
+  tl.fromTo(pr, { v: 0 }, { v: n, duration: d, ease: "none", onUpdate: () => { el.style.width = Math.floor(pr.v + 1e-6) + "ch"; } }, at);
+  if (cur) {
+    tl.set(cur, { opacity: 1 }, at);
+    if (!keepCursor) tl.set(cur, { opacity: 0 }, at + d + 0.12);
+  }
+  return at + d;
+}
+function blink(sel, from, to) {
+  for (let t = from; t < to; t += 0.5) { tl.set(sel, { opacity: 0 }, t); tl.set(sel, { opacity: 1 }, t + 0.25); }
+}
+function draw(root, at) {
+  tl.fromTo(root + " .vl", { scaleY: 0 }, { scaleY: 1, duration: 0.5, ease: "power3.out", stagger: 0.05 }, at);
+  tl.fromTo(root + " .hl", { scaleX: 0 }, { scaleX: 1, duration: 0.6, ease: "power3.out", stagger: 0.05 }, at + 0.05);
+  tl.fromTo(root + " .star", { scale: 0, rotation: -90 }, { scale: 1, rotation: 0, duration: 0.4, ease: "power2.out", stagger: 0.03 }, at + 0.3);
+}
+function flipIn(sel, at) {
+  tl.fromTo(sel, { rotationX: -90, opacity: 0, transformPerspective: 600 }, { rotationX: 0, opacity: 1, duration: 0.35, ease: "power3.out" }, at);
+}
+function flipSwap(btn, at) {
+  tl.to(btn + " .fa", { rotationX: 90, opacity: 0, duration: 0.3, ease: "power2.in" }, at);
+  tl.fromTo(btn + " .fb", { rotationX: -90, opacity: 0 }, { rotationX: 0, opacity: 1, duration: 0.3, ease: "power2.out" }, at + 0.12);
+}
+
+draw("#t1", 0);
+tl.fromTo("#t1-b", { y: 60, opacity: 0 }, { y: 0, opacity: 1, duration: 0.35, ease: "power3.out" }, 0.02);
+tl.fromTo("#t1-k", { opacity: 0 }, { opacity: 1, duration: 0.2 }, 0.05);
+type("#t1-c", 19, 0.1, 30, true);
+blink("#t1-c-c", 0.9833333333333333, 2.8);
+tl.fromTo("#t1-img", { scale: 1.0 }, { scale: 1.16, duration: 2.8, ease: "power1.inOut" }, 0);
+
+tl.fromTo("#t2-b", { y: 60, opacity: 0 }, { y: 0, opacity: 1, duration: 0.35, ease: "power3.out" }, 2.82);
+tl.fromTo("#t2-k", { opacity: 0 }, { opacity: 1, duration: 0.2 }, 2.8499999999999996);
+type("#t2-c", 18, 2.9, 30, true);
+blink("#t2-c-c", 3.75, 5.6);
+tl.fromTo("#t2-img", { scale: 1.0 }, { scale: 1.16, duration: 2.8, ease: "power1.inOut" }, 2.8);
+
+tl.fromTo("#t3-b", { y: 60, opacity: 0 }, { y: 0, opacity: 1, duration: 0.35, ease: "power3.out" }, 5.619999999999999);
+tl.fromTo("#t3-k", { opacity: 0 }, { opacity: 1, duration: 0.2 }, 5.6499999999999995);
+type("#t3-c", 8, 5.699999999999999, 30, true);
+blink("#t3-c-c", 6.216666666666666, 8.399999999999999);
+tl.fromTo("#t3-img", { scale: 1.0 }, { scale: 1.16, duration: 2.8, ease: "power1.inOut" }, 5.6);
+
+tl.fromTo("#t4-b", { y: 60, opacity: 0 }, { y: 0, opacity: 1, duration: 0.35, ease: "power3.out" }, 8.419999999999998);
+tl.fromTo("#t4-k", { opacity: 0 }, { opacity: 1, duration: 0.2 }, 8.45);
+type("#t4-c", 17, 8.499999999999998, 30, true);
+blink("#t4-c-c", 9.316666666666665, 11.2);
+tl.fromTo("#t4-img", { scale: 1.0 }, { scale: 1.16, duration: 2.8, ease: "power1.inOut" }, 8.399999999999999);
+draw("#end", 11.2);
+tl.fromTo("#end-logo", { opacity: 0, y: -12 }, { opacity: 1, y: 0, duration: 0.35, ease: "power3.out" }, 11.299999999999999);
+tl.fromTo("#end-kick", { opacity: 0 }, { opacity: 1, duration: 0.25 }, 11.35);
+{ const t1 = type("#end-h1", 11, 11.399999999999999, 34); type("#end-h2", 5, t1 + 0.02, 34, true); blink("#end-h2-c", t1 + 0.4, 15); }
+tl.fromTo("#end-sub", { opacity: 0 }, { opacity: 1, duration: 0.3 }, 12);
+tl.fromTo(["#end-l1", "#end-old"], { opacity: 0, y: 14 }, { opacity: 1, y: 0, duration: 0.3, stagger: 0.08 }, 11.75);
+tl.fromTo("#end-strike", { scaleX: 0 }, { scaleX: 1, duration: 0.3, ease: "power2.inOut" }, 12.149999999999999);
+tl.fromTo("#end-l2", { opacity: 0 }, { opacity: 1, duration: 0.25 }, 12.35);
+tl.fromTo("#end-code", { clipPath: "inset(0 100% 0 0)" }, { clipPath: "inset(0 0% 0 0)", duration: 0.25, ease: "steps(6)" }, 12.45);
+type("#end-code-t", 13, 12.649999999999999, 28);
+flipIn("#end-new", 13.149999999999999);
+flipIn("#end-btn", 13.5);
+tl.fromTo("#end-meta", { opacity: 0 }, { opacity: 1, duration: 0.3 }, 13.7);
+flipSwap("#end-btn", 14.1);
+
+window.__timelines = window.__timelines || {};
+window.__timelines["tour-16x9"] = tl;
+</script>
+</body>
+</html>
